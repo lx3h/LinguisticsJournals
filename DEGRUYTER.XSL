@@ -32,7 +32,7 @@
   <xsl:variable name="data">
     <general>
       <stylename>DEGRUYTER</stylename>
-      <version>2018.11.25</version>
+      <version>2018.11.27</version>
       <author>Yves Dhondt (yves.dhondt@gmail.com), modified by Dr. Locky Law (lx3h@yahoo.com)</author>
       <description>An implementation of the reference style used by the American Sociological Association.</description>
       <URL>http://www.degruyter.com/staticfiles/pdfs/mouton_journal_stylesheet.pdf</URL>
@@ -235,7 +235,7 @@
         <column id="1">
           <halign>left</halign>
           <valign>top</valign>
-          <format>{%Author:2%.}{ %Year|"n.d."%{%YearSuffix%}.}{ %Title%.}{ &lt;i&gt;%JournalName%&lt;/i&gt;}{ %Volume%{(%Issue%)}{. %Pages:::%}}{ (%Issue%){.%Pages:::%}}{ %Pages:::%}.{ {%URL%} (accessed {{%DayAccessed% }%MonthAccessed:s% }%YearAccessed%)}.{ %Comments%.}</format>
+          <format>{%Author:2%.}{ %Year|"n.d."%{%YearSuffix%}.}{ %Title%.}{ &lt;i&gt;%JournalName%&lt;/i&gt;}{ %Volume%{(%Issue%)}{. %Pages:::%}}{ (%Issue%){.%Pages:::%}}{. %Pages:::%}.{ {%URL%} (accessed {{%DayAccessed% }%MonthAccessed:s% }%YearAccessed%)}.{ %Comments%.}</format>
         </column>
         <sortkey>{%Author:0|Title:a%}{ %Year%}{ %Title:a%}</sortkey>
       </source>
