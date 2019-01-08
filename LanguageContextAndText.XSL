@@ -198,7 +198,7 @@
         <column id="1">
           <halign>left</halign>
           <valign>top</valign>
-          <format>{%Author:2%.}{ %Year|"n.d."%{%YearSuffix%}.}{ “%Title%.”}{ &lt;i&gt;%PeriodicalTitle%&lt;/i&gt;,}{{ %Day%} %Month:s%,}{ %Pages:pp. :pp. :%}.{ {%URL%} (accessed {{%DayAccessed% }%MonthAccessed:s% }%YearAccessed%)}.{ %Comments%.}</format>
+          <format>{%Author:2%.}{ %Year|"n.d."%{%YearSuffix%}.}{ “%Title%.”}{ &lt;i&gt;%PeriodicalTitle%&lt;/i&gt;,}{{ %Day%} %Month:s%,}{ %Pages:pp. :pp. :%}.{ {%URL%} (accessed {{%DayAccessed% }%MonthAccessed:s% }%YearAccessed%.)}{ %Comments%.}</format>
         </column>
         <sortkey>{%Author:0|Title:a%}{ %Year%}{ %Title:a%}</sortkey>
       </source>
@@ -206,7 +206,7 @@
         <column id="1">
           <halign>left</halign>
           <valign>top</valign>
-          <format>{%Author:2|Editor:3%.{ %Year|"n.d."%{%YearSuffix%}.}}{ &lt;i&gt;%Title%&lt;/i&gt;{, %Edition% edn.}{ %Year%{%YearSuffix%}.}.}{ %City|CountryRegion%{, %StateProvince%}{: %Publisher%}.}{ %Publisher%.}.{ {%URL%} (accessed {{%DayAccessed% }%MonthAccessed:s% }%YearAccessed%)}.{ %Comments%.}</format>
+          <format>{%Author:2|Editor:3%.{ %Year|"n.d."%{%YearSuffix%}.}}{ &lt;i&gt;%Title%&lt;/i&gt;{, %Edition% edn.}{ %Year%{%YearSuffix%}.}.}{ %City|CountryRegion%{, %StateProvince%}{: %Publisher%}.}{ %Publisher%.}.{ {%URL%} (accessed {{%DayAccessed% }%MonthAccessed:s% }%YearAccessed%.)}{ %Comments%.}</format>
         </column>
         <sortkey>{%Author:0|Editor:0|Title:a%}{ %Year%}{ %Title:a%}</sortkey>
       </source>
@@ -214,7 +214,7 @@
         <column id="1">
           <halign>left</halign>
           <valign>top</valign>
-          <format>{%Author:2|Title%}.{ %Year|"n.d."%{%YearSuffix%}.}{ %Title%.}{ In &lt;i&gt;%ShortTitle%&lt;/i&gt;{, vol. %Volume%}{, &lt;i&gt;%BookTitle%&lt;/i&gt;{ %Editor:4% (eds.)}}.}{ In { %Editor:4% (eds.),} &lt;i&gt;%BookTitle%&lt;/i&gt;}{ %Edition% edn.}{, %Pages:::%.}{ %City|CountryRegion%{, %StateProvince%}{: %Publisher%}.}{ %Publisher%.}{ {%MonthAccessed:s% {%DayAccessed%, }}%YearAccessed%}{ (%URL%)}</format>
+          <format>{%Author:2|Title%}.{ %Year|"n.d."%{%YearSuffix%}.}{ %Title%.}{ In &lt;i&gt;%ShortTitle%&lt;/i&gt;{, vol. %Volume%}{, &lt;i&gt;%BookTitle%&lt;/i&gt;{ %Editor:4% (eds.)}}.}{ In { %Editor:4% (eds.),} &lt;i&gt;%BookTitle%&lt;/i&gt;}{ %Edition% edn.}{, %Pages:::%.}{ %City|CountryRegion%{, %StateProvince%}{: %Publisher%}.}{ %Publisher%.}{ {%URL%} ({{%DayAccessed% }%MonthAccessed:s%,} %YearAccessed%.)}</format>
         </column>
         <sortkey>{%Author:0|Title:a%}{ %Year%}{ %Title:a%}</sortkey>
       </source>
@@ -230,7 +230,7 @@
         <column id="1">
           <halign>left</halign>
           <valign>top</valign>
-          <format>{%Author:2|InternetSiteTitle%.{ %Year|"n.d."%{%YearSuffix%}.}}{ %Title|InternetSiteTitle%.{ %Year%{%YearSuffix%}.}}{ %InternetSiteTitle%.}{ %City|CountryRegion%{, %StateProvince%}{: %Publisher|ProductionCompany%}.}{ %Publisher|ProductionCompany%.}{ %URL%}{ ({{%DayAccessed%} %MonthAccessed:s%,} %YearAccessed%).}{ %Comments%.}</format>
+          <format>{%Author:2|InternetSiteTitle%.{ %Year|"n.d."%{%YearSuffix%}.}}{ %Title|InternetSiteTitle%.{ %Year%{%YearSuffix%}.}}{ %InternetSiteTitle%.}{ %City|CountryRegion%{, %StateProvince%}{: %Publisher|ProductionCompany%}.}{ %Publisher|ProductionCompany%.}{ %URL%}{ ({{%DayAccessed%} %MonthAccessed:s%,} %YearAccessed%.)}{ %Comments%.}</format>
         </column>
         <sortkey>{%Author:0|InternetSiteTitle:a|Title:a%}{ %Year%}{ %Title:a%}</sortkey>
       </source>
@@ -238,7 +238,7 @@
         <column id="1">
           <halign>left</halign>
           <valign>top</valign>
-          <format>{%Author:2|InternetSiteTitle%.{ %Year|"n.d."%{%YearSuffix%}.}}{ %Title|InternetSiteTitle%.{ %Year%{%YearSuffix%}.}}{ &lt;i&gt;%InternetSiteTitle%&lt;/i&gt;.}{ %City|CountryRegion%{, %StateProvince%}{: %Publisher|ProductionCompany%}.}{ %Publisher|ProductionCompany%.}.{ {%URL%} ( {{%DayAccessed% }%MonthAccessed:s%, } %YearAccessed%)}.{ %Comments%.}</format>
+          <format>{%Author:2|InternetSiteTitle%.{ %Year|"n.d."%{%YearSuffix%}.}}{ %Title|InternetSiteTitle%.{ %Year%{%YearSuffix%}.}}{ &lt;i&gt;%InternetSiteTitle%&lt;/i&gt;.}{ %City|CountryRegion%{, %StateProvince%}{: %Publisher|ProductionCompany%}.}{ %Publisher|ProductionCompany%.}.{ {%URL%} ( {{%DayAccessed% }%MonthAccessed:s%, } %YearAccessed%.)}{ %Comments%.}</format>
         </column>
         <sortkey>{%Author:0|InternetSiteTitle:a|Title:a%}{ %Year%}{ %Title:a%}</sortkey>
       </source>
@@ -246,7 +246,7 @@
         <column id="1">
           <halign>left</halign>
           <valign>top</valign>
-          <format>{%Author:2%.}{ %Year|"n.d."%{%YearSuffix%}.}{ %Title%.}{ &lt;i&gt;%JournalName%&lt;/i&gt;}{ %Volume%{(%Issue%)}{. %Pages:::%}}{ (%Issue%){.%Pages:::%}}{. %Pages:::%}.{ {%URL%} ({{%DayAccessed% }%MonthAccessed:s%, }%YearAccessed%)}.{ %Comments%.}</format>
+          <format>{%Author:2%.}{ %Year|"n.d."%{%YearSuffix%}.}{ %Title%.}{ &lt;i&gt;%JournalName%&lt;/i&gt;}{ %Volume%{(%Issue%)}{. %Pages:::%}}{ (%Issue%){.%Pages:::%}}{. %Pages:::%}.{ {%URL%} ({{%DayAccessed% }%MonthAccessed:s%, }%YearAccessed%.)}{ %Comments%.}</format>
         </column>
         <sortkey>{%Author:0|Title:a%}{ %Year%}{ %Title:a%}</sortkey>
       </source>
