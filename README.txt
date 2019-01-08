@@ -25,5 +25,6 @@ Copyright: Copyright (c) 2008 Yves Dhondt
 Installation Instructions:
 		Just place the .XSL files you need into the path %userprofile%\AppData\Roaming\Microsoft\Bibliography\Style
 		then restart Microsoft Word to use the new citation and bibliography styles
+		If your style does not appear in Word, it means there is a syntax error in your file and you should try to find out what is wrong.
 
-Last update:	26 November 2018 by Dr. Locky Law
+Last update:	8 January 2019 by Dr. Locky Law
