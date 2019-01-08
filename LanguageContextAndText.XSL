@@ -198,7 +198,7 @@
         <column id="1">
           <halign>left</halign>
           <valign>top</valign>
-          <format>{%Author:2%.}{ %Year|"n.d."%{%YearSuffix%}.}{ “%Title%.”}{ &lt;i&gt;%PeriodicalTitle%&lt;/i&gt;,}{ %Month:s%{ %Day%},}{ %Pages:pp. :pp. :%}.{ {%URL%} (accessed {{%DayAccessed% }%MonthAccessed:s% }%YearAccessed%)}.{ %Comments%.}</format>
+          <format>{%Author:2%.}{ %Year|"n.d."%{%YearSuffix%}.}{ “%Title%.”}{ &lt;i&gt;%PeriodicalTitle%&lt;/i&gt;,}{{ %Day%} %Month:s%,}{ %Pages:pp. :pp. :%}.{ {%URL%} (accessed {{%DayAccessed% }%MonthAccessed:s% }%YearAccessed%)}.{ %Comments%.}</format>
         </column>
         <sortkey>{%Author:0|Title:a%}{ %Year%}{ %Title:a%}</sortkey>
       </source>
@@ -214,7 +214,7 @@
         <column id="1">
           <halign>left</halign>
           <valign>top</valign>
-          <format>{%Author:2|Title%}.{ %Year|"n.d."%{%YearSuffix%}.}{ %Title%.}{ In &lt;i&gt;%ShortTitle%&lt;/i&gt;{, vol. %Volume%}{, &lt;i&gt;%BookTitle%&lt;/i&gt;{ %Editor:4% (eds.)}}.}{ In { %Editor:4% (eds.),} &lt;i&gt;%BookTitle%&lt;/i&gt;}{ %Edition% edn.}{, %Pages:::%.}{ %City|CountryRegion%{, %StateProvince%}{: %Publisher%}.}{ %Publisher%.}{ Retrieved {%MonthAccessed:s% {%DayAccessed%, }}%YearAccessed%}{ (%URL%)}</format>
+          <format>{%Author:2|Title%}.{ %Year|"n.d."%{%YearSuffix%}.}{ %Title%.}{ In &lt;i&gt;%ShortTitle%&lt;/i&gt;{, vol. %Volume%}{, &lt;i&gt;%BookTitle%&lt;/i&gt;{ %Editor:4% (eds.)}}.}{ In { %Editor:4% (eds.),} &lt;i&gt;%BookTitle%&lt;/i&gt;}{ %Edition% edn.}{, %Pages:::%.}{ %City|CountryRegion%{, %StateProvince%}{: %Publisher%}.}{ %Publisher%.}{ {%MonthAccessed:s% {%DayAccessed%, }}%YearAccessed%}{ (%URL%)}</format>
         </column>
         <sortkey>{%Author:0|Title:a%}{ %Year%}{ %Title:a%}</sortkey>
       </source>
@@ -222,7 +222,7 @@
         <column id="1">
           <halign>left</halign>
           <valign>top</valign>
-          <format>{%Author:2%.}{ %Year|"n.d."%{%YearSuffix%}.}{ %Title%.}{ Paper presented at %ConferenceName%}{ %Volume%{(%Issue%)}{. %Pages:::%}}{ (%Issue%){.%Pages:::%}}{ %Pages:::%}{, %Publisher%}{, %City%}{, %Day%}{ %Month%}.{ {%URL%} (accessed {{%DayAccessed% }%MonthAccessed:s% }%YearAccessed%)}.{ %Comments%.}</format>
+          <format>{%Author:2%.}{ %Year|"n.d."%{%YearSuffix%}.}{ %Title%.}{ Paper presented at %ConferenceName%}{ %Volume%{(%Issue%)}{. %Pages:::%}}{ (%Issue%){.%Pages:::%}}{ %Pages:::%}{, %Publisher%}{, %City%}{, %Day%}{ %Month%}.{ {%URL%} ({{%DayAccessed% }%MonthAccessed:s%,} %YearAccessed%)}.{ %Comments%.}</format>
         </column>
         <sortkey>{%Author:0|Title:a%}{ %Year%}{ %Title:a%}</sortkey>
       </source>
@@ -230,7 +230,7 @@
         <column id="1">
           <halign>left</halign>
           <valign>top</valign>
-          <format>{%Author:2|InternetSiteTitle%.{ %Year|"n.d."%{%YearSuffix%}.}}{ %Title|InternetSiteTitle%.{ %Year%{%YearSuffix%}.}}{ %InternetSiteTitle%.}{ %City|CountryRegion%{, %StateProvince%}{: %Publisher|ProductionCompany%}.}{ %Publisher|ProductionCompany%.}{ %URL%}{ ({%MonthAccessed:s% {%DayAccessed%, }}%YearAccessed%).}{ %Comments%.}</format>
+          <format>{%Author:2|InternetSiteTitle%.{ %Year|"n.d."%{%YearSuffix%}.}}{ %Title|InternetSiteTitle%.{ %Year%{%YearSuffix%}.}}{ %InternetSiteTitle%.}{ %City|CountryRegion%{, %StateProvince%}{: %Publisher|ProductionCompany%}.}{ %Publisher|ProductionCompany%.}{ %URL%}{ ({{%DayAccessed%} %MonthAccessed:s%,} %YearAccessed%).}{ %Comments%.}</format>
         </column>
         <sortkey>{%Author:0|InternetSiteTitle:a|Title:a%}{ %Year%}{ %Title:a%}</sortkey>
       </source>
@@ -238,7 +238,7 @@
         <column id="1">
           <halign>left</halign>
           <valign>top</valign>
-          <format>{%Author:2|InternetSiteTitle%.{ %Year|"n.d."%{%YearSuffix%}.}}{ %Title|InternetSiteTitle%.{ %Year%{%YearSuffix%}.}}{ &lt;i&gt;%InternetSiteTitle%&lt;/i&gt;.}{ %City|CountryRegion%{, %StateProvince%}{: %Publisher|ProductionCompany%}.}{ %Publisher|ProductionCompany%.}.{ {%URL%} (accessed {{%DayAccessed% }%MonthAccessed:s% }%YearAccessed%)}.{ %Comments%.}</format>
+          <format>{%Author:2|InternetSiteTitle%.{ %Year|"n.d."%{%YearSuffix%}.}}{ %Title|InternetSiteTitle%.{ %Year%{%YearSuffix%}.}}{ &lt;i&gt;%InternetSiteTitle%&lt;/i&gt;.}{ %City|CountryRegion%{, %StateProvince%}{: %Publisher|ProductionCompany%}.}{ %Publisher|ProductionCompany%.}.{ {%URL%} ( {{%DayAccessed% }%MonthAccessed:s%, } %YearAccessed%)}.{ %Comments%.}</format>
         </column>
         <sortkey>{%Author:0|InternetSiteTitle:a|Title:a%}{ %Year%}{ %Title:a%}</sortkey>
       </source>
@@ -246,7 +246,7 @@
         <column id="1">
           <halign>left</halign>
           <valign>top</valign>
-          <format>{%Author:2%.}{ %Year|"n.d."%{%YearSuffix%}.}{ %Title%.}{ &lt;i&gt;%JournalName%&lt;/i&gt;}{ %Volume%{(%Issue%)}{. %Pages:::%}}{ (%Issue%){.%Pages:::%}}{. %Pages:::%}.{ {%URL%} (accessed {{%DayAccessed% }%MonthAccessed:s% }%YearAccessed%)}.{ %Comments%.}</format>
+          <format>{%Author:2%.}{ %Year|"n.d."%{%YearSuffix%}.}{ %Title%.}{ &lt;i&gt;%JournalName%&lt;/i&gt;}{ %Volume%{(%Issue%)}{. %Pages:::%}}{ (%Issue%){.%Pages:::%}}{. %Pages:::%}.{ {%URL%} ({{%DayAccessed% }%MonthAccessed:s%, }%YearAccessed%)}.{ %Comments%.}</format>
         </column>
         <sortkey>{%Author:0|Title:a%}{ %Year%}{ %Title:a%}</sortkey>
       </source>
@@ -262,7 +262,7 @@
         <column id="1">
           <halign>left</halign>
           <valign>top</valign>
-          <format>{%Author:2%.{ %Year|"n.d."%{%YearSuffix%}.}}{ “%Title%.”{ %Year%{%YearSuffix%}.}}{ %ThesisType%,}{ %Department%,}{ %Institution%,}{ %City|CountryRegion%{, %StateProvince%}}..{ {%URL%} (accessed {{%DayAccessed% }%MonthAccessed:s% }%YearAccessed%)}.{ %Comments%.}</format>
+          <format>{%Author:2%.{ %Year|"n.d."%{%YearSuffix%}.}}{ “%Title%.”{ %Year%{%YearSuffix%}.}}{ %ThesisType%,}{ %Department%,}{ %Institution%,}{ %City|CountryRegion%{, %StateProvince%}}..{ {%URL%} ({{%DayAccessed% }%MonthAccessed:s% }%YearAccessed%)}.{ %Comments%.}</format>
         </column>
         <sortkey>{%Author:0|Title:a%}{ %Year%}{ %Title:a%}</sortkey>
       </source>
