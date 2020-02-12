@@ -1,4 +1,4 @@
-Stylesheet for Microsoft Word 2007 Bibliography formatting.
+Stylesheet for Microsoft Word 2007 Bibliography formatting. (Work on Microsoft Word for Office 365 as well)
      
 Author(s): Yves Dhondt (yves.dhondt@gmail.com), modified by Dr. Locky Law (lx3h@yahoo.com)
                
@@ -23,8 +23,10 @@ Copyright: Copyright (c) 2008 Yves Dhondt
                 DEALINGS IN THE SOFTWARE.
 
 Installation Instructions:
-		Just place the .XSL files you need into the path %userprofile%\AppData\Roaming\Microsoft\Bibliography\Style
-		then restart Microsoft Word to use the new citation and bibliography styles
+		Just place:
+			1. the .XSL files you need, and types.xml into the folder %userprofile%\AppData\Roaming\Microsoft\Bibliography\Style
+			2. the BIBFORM.XML into the folder C:\Program Files (x86)\Microsoft Office\root\Office16\1033\Bibliography
+		then restart Microsoft Word to use the new citation and bibliography styles.
 		If your style does not appear in Word, it means there is a syntax error in your file and you should try to find out what is wrong.
 
-Last update:	8 January 2019 by Dr. Locky Law
+Last update:	12 February 2020 by Dr. Locky Law
