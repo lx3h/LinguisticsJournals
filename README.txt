@@ -27,6 +27,9 @@ Installation Instructions:
 			1. the .XSL files you need, and types.xml into the folder %userprofile%\AppData\Roaming\Microsoft\Bibliography\Style
 			2. the BIBFORM.XML into the folder C:\Program Files (x86)\Microsoft Office\root\Office16\1033\Bibliography
 		then restart Microsoft Word to use the new citation and bibliography styles.
+		
 		If your style does not appear in Word, it means there is a syntax error in your file and you should try to find out what is wrong.
+		
+		Please feel free to email me if you find any bugs you want me to fix. 
 
 Last update:	12 February 2020 by Dr. Locky Law
