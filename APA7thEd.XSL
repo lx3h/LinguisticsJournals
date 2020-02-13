@@ -31,7 +31,7 @@
   <!-- Variable containing all necessary data for a certain style of bibliography. -->
   <xsl:variable name="data">
     <general>
-      <stylename>APA Seventh Edition</stylename>
+      <stylename>APA 7th Edition (Alpha)</stylename>
       <version>2020.02.11</version>
       <description>An implementation of the APA 7th Ed reference style based on the description by Scribbr.</description>
       <URL>https://www.scribbr.com/apa-style/apa-seventh-edition-changes/</URL>
@@ -63,11 +63,11 @@
       <source type="BookSection">
         <b:ImportantField>b:Author/b:Author/b:NameList</b:ImportantField>
         <b:ImportantField>b:Author/b:BookAuthor/b:NameList</b:ImportantField>
-        <b:ImportantField>b:Author/b:Editor/b:NameList</b:ImportantField>
-        <b:ImportantField>b:Title</b:ImportantField>
-        <b:ImportantField>b:BookTitle</b:ImportantField>
-        <b:ImportantField>b:Edition</b:ImportantField>
         <b:ImportantField>b:Year</b:ImportantField>
+        <b:ImportantField>b:Title</b:ImportantField>
+        <b:ImportantField>b:Author/b:Editor/b:NameList</b:ImportantField>
+        <b:ImportantField>b:BookTitle</b:ImportantField>
+        <b:ImportantField>b:Pages</b:ImportantField>
         <b:ImportantField>b:Publisher</b:ImportantField>
         <b:ImportantField>b:DOI</b:ImportantField>  
       </source>
@@ -141,6 +141,16 @@
         <b:ImportantField>b:Institution</b:ImportantField>  
         <b:ImportantField>b:Publisher</b:ImportantField>
       </source>
+      <source type="Thesis">
+        <b:ImportantField>b:Author/b:Author/b:NameList</b:ImportantField>
+        <b:ImportantField>b:Year</b:ImportantField>
+        <b:ImportantField>b:Title</b:ImportantField>
+        <b:ImportantField>b:Institution</b:ImportantField>
+        <b:ImportantField>b:ThesisType</b:ImportantField>
+        <b:ImportantField>b:Comments</b:ImportantField>
+        <b:ImportantField>b:URL</b:ImportantField>
+        <b:ImportantField>b:DOI</b:ImportantField>
+      </source>
       <source type="Tweet">
         <b:ImportantField>b:Author/b:Author/b:NameList</b:ImportantField>
         <b:ImportantField>b:Publisher</b:ImportantField>          
@@ -164,16 +174,16 @@
         <format>[%Tag%]</format>
       </source>
       <source type="ArticleInAPeriodical">
-        <format>{%CitationPrefix%}{%Author:1|ShortTitle|Title%, }{%Year|"n.d."%{%YearSuffix%}}{, %CitationPages::%}{%CitationSuffix%}</format>
+        <format>{%CitationPrefix%}{%Author:1|ShortTitle|Title%, }{%Year|"n.d."%{%YearSuffix%}}{, %CitationPages:p. :pp.%}{%CitationSuffix%}</format>
       </source>
       <source type="Book">
-        <format>{%CitationPrefix%}{%Author:1|Editor:1|ShortTitle|Title%, }{%Year|"n.d."%{%YearSuffix%}}{, %CitationPages::%}{%CitationSuffix%}</format>
+        <format>{%CitationPrefix%}{%Author:1|Editor:1|ShortTitle|Title%, }{%Year|"n.d."%{%YearSuffix%}}{, %CitationPages:p. :pp.%}{%CitationSuffix%}</format>
       </source>
       <source type="BookSection">
-        <format>{%CitationPrefix%}{%Author:1|Editor:1|BookAuthor:1|ShortTitle|Title|BookTitle%, }{%Year|"n.d."%{%YearSuffix%}}{, %CitationPages::%}{%CitationSuffix%}</format>
+        <format>{%CitationPrefix%}{%Author:1|Editor:1|BookAuthor:1|ShortTitle|Title|BookTitle%, }{%Year|"n.d."%{%YearSuffix%}}{, %CitationPages:p. :pp.%}{%CitationSuffix%}</format>
       </source>
       <source type="ConferenceProceedings">
-        <format>{%CitationPrefix%}{%Author:1|ShortTitle|Title%, }{%Year|"n.d."%{%YearSuffix%}}{, %CitationPages::%}{%CitationSuffix%}</format>
+        <format>{%CitationPrefix%}{%Author:1|ShortTitle|Title%, }{%Year|"n.d."%{%YearSuffix%}}{, %CitationPages:p. :pp.%}{%CitationSuffix%}</format>
       </source>
       <source type="FacebookPost">
         <format>{%CitationPrefix%}{%Author:1|Title%, }{%Year|"n.d."%{%YearSuffix%}}{%CitationSuffix%}</format>
@@ -182,16 +192,19 @@
         <format>{%CitationPrefix%}{%Author:1|ShortTitle|Title%, }{%Year|"n.d."%{%YearSuffix%}}{, para. %CitationPages::%}{%CitationSuffix%}</format>
       </source>
       <source type="JournalArticle">
-        <format>{%CitationPrefix%}{%Author:1|ShortTitle|Title%, }{%Year|"n.d."%{%YearSuffix%}}{, %CitationPages::%}{%CitationSuffix%}</format>
+        <format>{%CitationPrefix%}{%Author:1|ShortTitle|Title%, }{%Year|"n.d."%{%YearSuffix%}}{, %CitationPages:p. :pp.%}{%CitationSuffix%}</format>
       </source>
       <source type="Misc">
-        <format>{%CitationPrefix%}{%Author:1|Editor:1|ShortTitle|Title%, }{%Year|"n.d."%{%YearSuffix%}}{, %CitationPages::%}{%CitationSuffix%}</format>
+        <format>{%CitationPrefix%}{%Author:1|Editor:1|ShortTitle|Title%, }{%Year|"n.d."%{%YearSuffix%}}{, %CitationPages:p. :pp.%}{%CitationSuffix%}</format>
       </source>
       <source type="OnlineVideo">
         <format>{%CitationPrefix%}{%Author:1|Title%, }{%Year|"n.d."%{%YearSuffix%}}{%CitationSuffix%}</format>
       </source>        
       <source type="Report">
         <format>{%CitationPrefix%}{%Author:1|Title%}{ %Year|"n.d."%}{%YearSuffix%}{:%CitationPages:::e%}{, vol.%CitationVolume%}{%CitationSuffix%}</format>
+      </source>
+      <source type="Thesis">
+        <format>{%CitationPrefix%}{%Author:1|Title%, }{%Year|"n.d."%{%YearSuffix%}}{%CitationSuffix%}</format>
       </source>
       <source type="Tweet">
         <format>{%CitationPrefix%}{%Author:1|Title%, }{%Year|"n.d."%{%YearSuffix%}}{%CitationSuffix%}</format>
@@ -226,7 +239,7 @@
         <column id="1">
           <halign>left</halign>
           <valign>top</valign>
-          <format>{%Author:2|Editor:3|BookAuthor:2%{ (%Year|"n.d"%{%YearSuffix%}).}}{ %Title|ShortTitle%}{. In:{ %Editor:3|BookAuthor:2%} &lt;i&gt;%BookTitle%&lt;/i&gt;{ (%Edition:os% ed)}}{ (%Pages:p. :pp. %).}{ %Publisher%.}{ https://doi.org/%DOI%}</format>
+          <format>{%Author:2|Editor:3|BookAuthor:2%{ (%Year|"n.d"%{%YearSuffix%}).}}{ %Title|ShortTitle%}{. In:{ %Editor:3|BookAuthor:2%} &lt;i&gt;%BookTitle%&lt;/i&gt;{ (%Edition:os% ed)}}{ (%Pages:p. :pp. %)}. { %Publisher%.}{ https://doi.org/%DOI:l%}</format>
         </column>
         <sortkey>{%Author:0|Editor:0|BookAuthor:0|Title|ShortTitle%}{ %Year%}{ %Title|ShortTitle%}</sortkey>
       </source>
@@ -235,7 +248,7 @@
         <column id="1">
           <halign>left</halign>
           <valign>top</valign>
-          <format>{%Author:2%.{ (%Year%{%YearSuffix%}, %Month% %Day%).}}{ &lt;i&gt;%Title% &lt;/i&gt; %Type%.}{. %ConferenceName%}{, %City|CountryRegion%{, %StateProvince%}.}{ {https://doi.org/%DOI%} %URL:l% }</format>
+          <format>{%Author:2%.{ (%Year%{%YearSuffix%}, %Month% %Day%).}}{ &lt;i&gt;%Title% &lt;/i&gt; %Type%.}{. %ConferenceName%}{, %City|CountryRegion%{, %StateProvince%}.}{ {https://doi.org/%DOI:l%} %URL:l% }</format>
         </column>
         <sortkey>{%Author:0|Title|ShortTitle%}{ %Year%}{ %Title|ShortTitle%}</sortkey>
       </source>
@@ -259,23 +272,16 @@
         <column id="1">
           <halign>left</halign>
           <valign>top</valign>
-          <format>{%Author:2%{ (%Year|"n.d"%{%YearSuffix%}).}}{ %Title|ShortTitle%{. &lt;i&gt;%JournalName%&lt;/i&gt;}}{ &lt;i&gt;%JournalName%&lt;/i&gt;}{, &lt;i&gt;%Volume%&lt;/i&gt;}{ (%Issue%)}{, %Pages%.}{ https://doi.org/%DOI%}</format>
+          <format>{%Author:2%{ (%Year|"n.d"%{%YearSuffix%}).}}{ %Title|ShortTitle%{. &lt;i&gt;%JournalName%&lt;/i&gt;}}{ &lt;i&gt;%JournalName%&lt;/i&gt;}{, &lt;i&gt;%Volume%&lt;/i&gt;}{ (%Issue%)}{, %Pages%.}{ https://doi.org/%DOI:l%}</format>
         </column>
         <sortkey>{%Author:0|Title|ShortTitle%}{ %Year%}{ %Title|ShortTitle%}</sortkey>
       </source>
-      <source type="Misc"><!-- hardcoded for PhD thesis-->
-        <column id="1">
-          <halign>left</halign>
-          <valign>top</valign>
-          <format>{%Author:2|Title%.}{ (%Year|"n.d."%{%YearSuffix%}).}{ &lt;i&gt;%Title%&lt;/i&gt;.} PhD thesis{{, %Publisher%, %City|CountryRegion%}}.{. Available at: %URL:l|StandardNumber%{ (accessed {{%DayAccessed% }%MonthAccessed:s% }%YearAccessed%)}}.</format>
-        </column>
-        <sortkey>{%Author:0|Editor:0|Title|ShortTitle%}{ %Year%}{ %Title|ShortTitle%}</sortkey>
-      </source>
+
       <source type="Report">
         <column id="1">
           <halign>left</halign>
           <valign>top</valign>
-          <format>{%Author:2%.{ %Year|"n.d."%{%YearSuffix%}.}}{ “%Title%.”{ %Year%{%YearSuffix%}.}}{ %ThesisType%,}{ %Department%,}{ %Institution%,}{ %City|CountryRegion%{, %StateProvince%}}..{ {%URL%} (accessed {{%DayAccessed% }%MonthAccessed:s% }%YearAccessed%)}.{ %Comments%.}</format>
+          <format>{%Author:2%.{ %Year|"n.d."%{%YearSuffix%}.}}{ “%Title%.”{ %Year%{%YearSuffix%}.}}{ %ThesisType%,}{ %Department%,}{ %Institution%,}{ %City|CountryRegion%{, %StateProvince%}}.{ {%URL%} (accessed {{%DayAccessed% }%MonthAccessed:s% }%YearAccessed%)}.{ %Comments%.}</format>
         </column>
         <sortkey>{%Author:0|Title:a%}{ %Year%}{ %Title:a%}</sortkey>
       </source>
@@ -287,6 +293,14 @@
         </column>
         <sortkey>{%Author:0|Title|InternetSiteTitle%}{ %Year%}{ %Title|ShortTitle|InternetSiteTitle%}</sortkey>
       </source>
+      <source type="Thesis">
+        <column id="1">
+          <halign>left</halign>
+          <valign>top</valign>
+          <format>{%Author:2|Title%.}{ (%Year%{%YearSuffix%}).}{ &lt;i&gt;%Title%&lt;/i&gt;} { [%ThesisType%, %Institution%].} {%Comments%.}{{ %URL:l|DOI:l%}}</format>
+        </column>
+        <sortkey>{%Author:0|Editor:0|Title|ShortTitle%}{ %Year%}{ %Title|ShortTitle%}</sortkey>
+      </source>
       <source type="Tweet">
         <column id="1">
           <halign>left</halign>
@@ -295,7 +309,7 @@
         </column>
         <sortkey>{%Author:0|Title|InternetSiteTitle%}{ %Year%}{ %Title|ShortTitle|InternetSiteTitle%}</sortkey>
       </source>
-        
+
     </bibliography>
     <namelists>
       <list name="sort" id="0">

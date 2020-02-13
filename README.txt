@@ -32,6 +32,6 @@ Installation Instructions:
 		
 		Please feel free to email me if you find any bugs you want me to fix. 
 
-Last update:	12 February 2020 by Dr. Locky Law
+Last update:	13 February 2020 by Dr. Locky Law
 
 Cite: Law, L. (2020). The Microsoft Word bibliography style extender for linguistics journals. GitHub. https://github.com/lx3h/LinguisticsJournals

@@ -475,5 +475,18 @@
     <DataTag>b:Day</DataTag>
     <DataTag>b:URL</DataTag>
     <!-- End extra tags. -->      
-  </Type>  
+  </Type>
+  <Type Name="Thesis">
+    <!-- Begin extra tags. -->
+    <DataTag>b:Author/b:Author/b:NameList</DataTag>
+    <DataTag>b:Title</DataTag>
+    <DataTag>b:Year</DataTag>
+    <DataTag>b:Department</DataTag>
+    <DataTag>b:Institution</DataTag>
+    <DataTag>b:ThesisType</DataTag>
+    <DataTag>b:Comments</DataTag>
+    <DataTag>b:URL</DataTag>
+    <DataTag>b:DOI</DataTag>
+    <!-- End extra tags. -->
+  </Type>
 </Types>
