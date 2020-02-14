@@ -32,7 +32,7 @@
   <xsl:variable name="data">
     <general>
       <stylename>APA 7th Edition (Alpha)</stylename>
-      <version>2020.02.11</version>
+      <version>2020.02.14</version>
       <description>An implementation of the APA 7th Ed reference style based on the description by Scribbr.</description>
       <URL>https://www.scribbr.com/apa-style/apa-seventh-edition-changes/</URL>
       <author>Yves Dhondt (yves.dhondt@gmail.com), modified by Dr. Locky Law (lx3h@yahoo.com)</author>
@@ -289,7 +289,7 @@
           <valign>top</valign>  
           <format>{%Author:2%{ (%Year|"n.d"%{%YearSuffix%}).}}{ %Title%}{. In &lt;i&gt;%BookTitle%&lt;/i&gt;.}{{ Retrieved { %MonthAccessed:s%{ %DayAccessed%}}, %YearAccessed%, from} %URL:l%}</format>
         </column>
-        <sortkey>{%Author:0|Editor:0|BookAuthor:0|Title|ShortTitle%}{ %Year%}{ %Title|ShortTitle%}</sortkey>
+        <sortkey>{%Author:0|Title%}{ %Year%}{ %Title|ShortTitle%}</sortkey>
       </source>
       <source type="FacebookPost">
         <column id="1">
@@ -353,7 +353,7 @@
           <valign>top</valign>
           <format>{%Author:2%. [%Publisher%]. { (%Year%{%YearSuffix%}, %Month% %Day%).}}{ &lt;i&gt;%Title% &lt;/i&gt; %Type%.}{ %InternetSiteTitle%.}{ %URL:l%}</format>
         </column>
-        <sortkey>{%Author:0|Title|InternetSiteTitle%}{ %Year%}{ %Title|ShortTitle|InternetSiteTitle%}</sortkey>
+        <sortkey>{%Author:0|Title|InternetSiteTitle%}{ %Year%}{ %Title|InternetSiteTitle%}</sortkey>
       </source>
 
     </bibliography>
