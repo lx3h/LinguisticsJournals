@@ -83,6 +83,16 @@
         <b:ImportantField>b:DOI</b:ImportantField>
         <b:ImportantField>b:URL</b:ImportantField>  
       </source>
+      <source type="DictionaryEntry">
+        <b:ImportantField>b:Author/b:Author/b:NameList</b:ImportantField>
+        <b:ImportantField>b:Year</b:ImportantField>
+        <b:ImportantField>b:Title</b:ImportantField>
+        <b:ImportantField>b:BookTitle</b:ImportantField>
+        <b:ImportantField>b:MonthAccessed</b:ImportantField>
+        <b:ImportantField>b:DayAccessed</b:ImportantField>
+        <b:ImportantField>b:YearAccessed</b:ImportantField>   
+        <b:ImportantField>b:URL</b:ImportantField>  
+      </source>        
       <source type="FacebookPost">
         <b:ImportantField>b:Author/b:Author/b:NameList</b:ImportantField>
         <b:ImportantField>b:Title</b:ImportantField>
@@ -185,6 +195,9 @@
       <source type="ConferenceProceedings">
         <format>{%CitationPrefix%}{%Author:1|ShortTitle|Title%, }{%Year|"n.d."%{%YearSuffix%}}{, %CitationPages:p. :pp.%}{%CitationSuffix%}</format>
       </source>
+      <source type="DictionaryEntry">
+        <format>{%CitationPrefix%}{%Author:1|Title%, }{%Year|"n.d."%{%YearSuffix%}}{%CitationSuffix%}</format>
+      </source>
       <source type="FacebookPost">
         <format>{%CitationPrefix%}{%Author:1|Title%, }{%Year|"n.d."%{%YearSuffix%}}{%CitationSuffix%}</format>
       </source>
@@ -243,20 +256,27 @@
         </column>
         <sortkey>{%Author:0|Editor:0|BookAuthor:0|Title|ShortTitle%}{ %Year%}{ %Title|ShortTitle%}</sortkey>
       </source>
-<!-- Missing country and publisher's city, need to hardcode them into 'City' and 'Publisher' respectively. Use DayAccessed, MonthAccessed and YearAccessed for conference day, month and year-->
       <source type="ConferenceProceedings">
         <column id="1">
           <halign>left</halign>
           <valign>top</valign>
-          <format>{%Author:2%.{ (%Year%{%YearSuffix%}, %Month% %Day%).}}{ &lt;i&gt;%Title% &lt;/i&gt; %Type%.}{. %ConferenceName%}{, %City|CountryRegion%{, %StateProvince%}.}{ {https://doi.org/%DOI:l%} %URL:l% }</format>
+          <format>{%Author:2%.{ (%Year%{%YearSuffix%}, %Month% %Day%).}}{ &lt;i&gt;%Title% &lt;/i&gt; %Type%.}{. [%Medium%]}{, %City|CountryRegion%{, %StateProvince%}.}{ {https://doi.org/%DOI:l%} %URL:l% }</format>
         </column>
         <sortkey>{%Author:0|Title|ShortTitle%}{ %Year%}{ %Title|ShortTitle%}</sortkey>
+      </source>
+      <source type="DictionaryEntry">
+        <column id="1">
+          <halign>left</halign>
+          <valign>top</valign>  
+          <format>{%Author:2%{ (%Year|"n.d"%{%YearSuffix%}).}}{ %Title%}{. In &lt;i&gt;%BookTitle%&lt;/i&gt;.}{{ Retrieved { %MonthAccessed:s%{ %DayAccessed%}}, %YearAccessed%, from} %URL:l%}</format>
+        </column>
+        <sortkey>{%Author:0|Editor:0|BookAuthor:0|Title|ShortTitle%}{ %Year%}{ %Title|ShortTitle%}</sortkey>
       </source>
       <source type="FacebookPost">
         <column id="1">
           <halign>left</halign>
           <valign>top</valign>
-          <format>{%Author:2%.  { (%Year%{%YearSuffix%}, %Month% %Day%).}}{ &lt;i&gt;%Title% &lt;/i&gt; %Type%.}{ %InternetSiteTitle%.}{ %URL:l%{ ( {{%DayAccessed% }%MonthAccessed:s%}, %YearAccessed%)}}</format>
+          <format>{%Author:2%.  { (%Year%{%YearSuffix%}, %Month% %Day%).}}{ &lt;i&gt;%Title% &lt;/i&gt; %Type%.}{ %InternetSiteTitle%.}{ %URL:l%}</format>
         </column>
         <sortkey>{%Author:0|Title|InternetSiteTitle%}{ %Year%}{ %Title|InternetSiteTitle%}</sortkey>
       </source>
@@ -264,7 +284,7 @@
         <column id="1">
           <halign>left</halign>
           <valign>top</valign>
-          <format>{%Author:2%.{ (%Year%{%YearSuffix%}, %Month% %Day%).}}{ &lt;i&gt;%Title%&lt;/i&gt;.}{ %InternetSiteTitle%.} { %URL:l% { Retrieved {{%DayAccessed% }%MonthAccessed:s%}, %YearAccessed%}.}</format>
+          <format>{%Author:2%.{ (%Year%{%YearSuffix%}, %Month% %Day%).}}{ &lt;i&gt;%Title%&lt;/i&gt;.}{ %InternetSiteTitle%.}{{ Retrieved { %MonthAccessed:s%{ %DayAccessed%}}, %YearAccessed%, from} %URL:l%}</format>
         </column>
         <sortkey>{%Author:0|Title|ShortTitle|InternetSiteTitle%}{ %Year%}{ %Title|ShortTitle|InternetSiteTitle%}</sortkey>
       </source>
@@ -276,12 +296,11 @@
         </column>
         <sortkey>{%Author:0|Title|ShortTitle%}{ %Year%}{ %Title|ShortTitle%}</sortkey>
       </source>
-
       <source type="Report">
         <column id="1">
           <halign>left</halign>
           <valign>top</valign>
-          <format>{%Author:2%.{ %Year|"n.d."%{%YearSuffix%}.}}{ “%Title%.”{ %Year%{%YearSuffix%}.}}{ %ThesisType%,}{ %Department%,}{ %Institution%,}{ %City|CountryRegion%{, %StateProvince%}}.{ {%URL%} (accessed {{%DayAccessed% }%MonthAccessed:s% }%YearAccessed%)}.{ %Comments%.}</format>
+          <format>{%Author:2%.{ %Year|"n.d."%{%YearSuffix%}.}}{ “%Title%.”{ %Year%{%YearSuffix%}.}}{ %ThesisType%,}{ %Department%,}{ %Institution%,}{ %City|CountryRegion%{, %StateProvince%}}.{{ Retrieved { %MonthAccessed:s%{ %DayAccessed%}}, %YearAccessed%, from} %URL:l%}</format>
         </column>
         <sortkey>{%Author:0|Title:a%}{ %Year%}{ %Title:a%}</sortkey>
       </source>
@@ -414,6 +433,7 @@
         <sourcetype type="BookSection">Book Section</sourcetype>
         <sourcetype type="Case">Case</sourcetype>
         <sourcetype type="ConferenceProceedings">Conference</sourcetype>
+        <sourcetype type="DictionaryEntry"></sourcetype>
         <sourcetype type="DocumentFromInternetSite">Electronic Document</sourcetype>
         <sourcetype type="ElectronicSource">Electronic Source</sourcetype>
         <sourcetype type="FacebookPost">Facebook Post</sourcetype>
@@ -444,6 +464,9 @@
       <source type="ConferenceProceedings">
         <yearsuffix>{%Author:1|ShortTitle|Title%}{%Year%}</yearsuffix>
       </source>
+       <source type="DictionaryEntry">
+        <yearsuffix>{%Author:1|ShortTitle|Title%}{%Year%}</yearsuffix>
+      </source>       
       <source type="FacebookPost">
         <yearsuffix>{%Author:1|ShortTitle|Title%}{%Year%}</yearsuffix>
       </source>

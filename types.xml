@@ -489,4 +489,16 @@
     <DataTag>b:DOI</DataTag>
     <!-- End extra tags. -->
   </Type>
+  <Type Name="DictionaryEntry">
+    <!-- Begin extra tags. -->
+    <DataTag>b:Author/b:Author/b:NameList</DataTag>
+    <DataTag>b:Year</DataTag>
+    <DataTag>b:Title</DataTag>
+    <DataTag>b:BookTitle</DataTag>
+    <DataTag>b:MonthAccessed</DataTag>
+    <DataTag>b:DayAccessed</DataTag>
+    <DataTag>b:YearAccessed</DataTag>   
+    <DataTag>b:URL</DataTag> 
+    <!-- End extra tags. -->
+  </Type>
 </Types>
