@@ -103,6 +103,22 @@
         <b:ImportantField>b:Year</b:ImportantField>
         <b:ImportantField>b:URL</b:ImportantField>  
       </source>
+      <source type="Film">
+        <!-- Tags for Film and Televsion -->
+        <b:ImportantField>b:Author/b:ProducerName/b:NameList</b:ImportantField> <!-- Executive producer -->
+        <b:ImportantField>b:Author/b:Director/b:NameList</b:ImportantField> <!-- Film or Series director -->
+        <b:ImportantField>b:Year</b:ImportantField>
+        <b:ImportantField>b:Title</b:ImportantField>
+        <b:ImportantField>b:Type</b:ImportantField>
+        <b:ImportantField>b:ProductionCompany</b:ImportantField>
+        <!-- Tags for a TV Episode -->        
+        <b:ImportantField>b:Author/b:Writer/b:NameList</b:ImportantField> <!-- Episode writer -->        
+        <b:ImportantField>b:Author/b:Author/b:NameList</b:ImportantField> <!-- Episode director -->
+        <b:ImportantField>b:MonthAccessed</b:ImportantField> <!-- Month Aired -->
+        <b:ImportantField>b:DayAccessed</b:ImportantField> <!-- Day Aired -->
+        <b:ImportantField>b:YearAccessed</b:ImportantField> <!-- Year Aired -->
+        <b:ImportantField>b:ShortTitle</b:ImportantField>
+      </source>
       <source type="InternetSite">
         <b:ImportantField>b:Author/b:Author/b:NameList</b:ImportantField>
         <b:ImportantField>b:Title</b:ImportantField>
@@ -201,6 +217,9 @@
       <source type="FacebookPost">
         <format>{%CitationPrefix%}{%Author:1|Title%, }{%Year|"n.d."%{%YearSuffix%}}{%CitationSuffix%}</format>
       </source>
+       <source type="Film">
+        <format>{%CitationPrefix%}{%Writer:1|Author:1|ProducerName:1|Director:1|ShortTitle|Title%, }{%Year|"n.d."%{%YearSuffix%}}{, %CitationPages:hhmmss. %}{%CitationSuffix%}</format>
+      </source>       
       <source type="InternetSite">
         <format>{%CitationPrefix%}{%Author:1|ShortTitle|Title%, }{%Year|"n.d."%{%YearSuffix%}}{, para. %CitationPages::%}{%CitationSuffix%}</format>
       </source>
@@ -252,7 +271,7 @@
         <column id="1">
           <halign>left</halign>
           <valign>top</valign>
-          <format>{%Author:2|Editor:3|BookAuthor:2%{ (%Year|"n.d"%{%YearSuffix%}).}}{ %Title|ShortTitle%}{. In:{ %Editor:3|BookAuthor:2%} &lt;i&gt;%BookTitle%&lt;/i&gt;{ (%Edition:os% ed)}}{ (%Pages:p. :pp. %)}. { %Publisher%.}{ https://doi.org/%DOI:l%}</format>
+          <format>{%Author:2|Editor:3|BookAuthor:2%{ (%Year|"n.d"%{%YearSuffix%}).}}{ %Title|ShortTitle%}{. In{ %Editor:3|BookAuthor:2%}, &lt;i&gt;%BookTitle%&lt;/i&gt;{ (%Edition:os% ed)}}{ (%Pages:p. :pp. %)}. { %Publisher%.}{ https://doi.org/%DOI:l%}</format>
         </column>
         <sortkey>{%Author:0|Editor:0|BookAuthor:0|Title|ShortTitle%}{ %Year%}{ %Title|ShortTitle%}</sortkey>
       </source>
@@ -279,6 +298,14 @@
           <format>{%Author:2%.  { (%Year%{%YearSuffix%}, %Month% %Day%).}}{ &lt;i&gt;%Title% &lt;/i&gt; %Type%.}{ %InternetSiteTitle%.}{ %URL:l%}</format>
         </column>
         <sortkey>{%Author:0|Title|InternetSiteTitle%}{ %Year%}{ %Title|InternetSiteTitle%}</sortkey>
+      </source>
+      <source type="Film">
+        <column id="1">
+          <halign>left</halign>
+          <valign>top</valign>
+          <format>{%Writer:2% (Writer), &amp; %Author:2% (Director){ (%YearAccessed%{%YearSuffix%}, %MonthAccessed% %DayAccessed%).}}{ %ShortTitle% %Type%.}{ In{ %ProducerName:5%,} &lt;i&gt;%Title%&lt;/i&gt;.{ %ProductionCompany%.}}</format>
+        </column>
+        <sortkey>{%Author:0|Editor:0|BookAuthor:0|Title|ShortTitle%}{ %Year%}{ %Title|ShortTitle%}</sortkey>
       </source>
       <source type="InternetSite">
         <column id="1">
@@ -380,8 +407,8 @@
         <single_prefix></single_prefix>
         <multi_prefix></multi_prefix>
         <corporate>{%Corporate%}</corporate>
-        <first_person>{%Last% }{%First:a%.}{%Middle:a%.}</first_person>
-        <other_persons>{%Last% }{%First:a%.}{%Middle:a%.}</other_persons>
+        <first_person>{%First:a%.}{ %Middle:a%.}{ %Last% }</first_person>
+        <other_persons>{%First:a%.}{ %Middle:a%.}{ %Last% }</other_persons>
         <separator_between_if_two> &amp; </separator_between_if_two>
         <separator_between_if_more_than_two>, </separator_between_if_more_than_two>
         <separator_before_last> &amp; </separator_before_last>
@@ -409,6 +436,23 @@
         <single_suffix></single_suffix>
         <multi_suffix></multi_suffix>
       </list>
+        
+      <!-- tailor-made for Film and Television-->
+    <list name="exeproducer" id="5">
+        <single_prefix></single_prefix>
+        <multi_prefix></multi_prefix>
+        <corporate>{%Corporate%}</corporate>
+        <first_person>{%First:a%.}{ %Middle:a%.}{ %Last% }</first_person>
+        <other_persons>{%First:a%.}{ %Middle:a%.}{ %Last% }</other_persons>
+        <separator_between_if_two> and </separator_between_if_two>
+        <separator_between_if_more_than_two>, </separator_between_if_more_than_two>
+        <separator_before_last> and </separator_before_last>
+        <max_number_of_persons_to_display>20</max_number_of_persons_to_display>
+        <number_of_persons_to_display_if_more_than_max>20</number_of_persons_to_display_if_more_than_max>
+        <overflow> et al.</overflow>
+        <single_suffix> (Executive Producer)</single_suffix>
+        <multi_suffix> (Executive Producers)</multi_suffix>
+      </list>        
     </namelists>
     <strings>
       <months>
@@ -437,7 +481,7 @@
         <sourcetype type="DocumentFromInternetSite">Electronic Document</sourcetype>
         <sourcetype type="ElectronicSource">Electronic Source</sourcetype>
         <sourcetype type="FacebookPost">Facebook Post</sourcetype>
-        <sourcetype type="Film">Film</sourcetype>
+        <sourcetype type="Film">Film and Television</sourcetype>
         <sourcetype type="InternetSite">Web Site</sourcetype>
         <sourcetype type="Interview">Interview</sourcetype>
         <sourcetype type="JournalArticle">Journal Article</sourcetype>
@@ -469,6 +513,9 @@
       </source>       
       <source type="FacebookPost">
         <yearsuffix>{%Author:1|ShortTitle|Title%}{%Year%}</yearsuffix>
+      </source>
+      <source type="Film">
+        <yearsuffix>{%ProducerName:1|Director:1|Title%}{%Year%}</yearsuffix>
       </source>
       <source type="InternetSite">
         <yearsuffix>{%Author:1|ShortTitle|Title%}{%Year%}</yearsuffix>

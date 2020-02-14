@@ -339,7 +339,7 @@
     <DataTag>b:Comments</DataTag>
     <!-- End original tags. -->
     <!-- Begin extra tags. -->
-    <DataTag>b:Type</DataTag>
+    <DataTag>b:Type</DataTag>   
     <DataTag>b:Publisher</DataTag>
     <DataTag>b:City</DataTag>
     <!-- End extra tags. -->
