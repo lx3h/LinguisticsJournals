@@ -303,7 +303,7 @@
         <column id="1">
           <halign>left</halign>
           <valign>top</valign>
-          <format>{%Writer:2% (Writer), &amp; %Author:2% (Director){ (%YearAccessed%{%YearSuffix%}, %MonthAccessed% %DayAccessed%).}}{ %ShortTitle% %Type%.}{ In{ %ProducerName:5%,} &lt;i&gt;%Title%&lt;/i&gt;.{ %ProductionCompany%.}}</format>
+          <format>{%Writer:6%, &amp; %Author:7%.{{ (%YearAccessed%{%YearSuffix%}, %MonthAccessed% %DayAccessed%).}{ %ShortTitle% %Type%.} In}{ { %ProducerName:5%,} &lt;i&gt;%Title%&lt;/i&gt;.{ %ProductionCompany%.}}}{  {%Director:7%.} { (%Year%).} &lt;i&gt;%Title%&lt;/i&gt; %Type%.  { %ProductionCompany%.}}</format>
         </column>
         <sortkey>{%Author:0|Editor:0|BookAuthor:0|Title|ShortTitle%}{ %Year%}{ %Title|ShortTitle%}</sortkey>
       </source>
@@ -381,7 +381,7 @@
         <other_persons>{%Last|First%}</other_persons>
         <separator_between_if_two> &amp; </separator_between_if_two>
         <separator_between_if_more_than_two>, </separator_between_if_more_than_two>
-        <separator_before_last> &amp; </separator_before_last>
+        <separator_before_last>, &amp; </separator_before_last>
         <max_number_of_persons_to_display>2</max_number_of_persons_to_display>
         <number_of_persons_to_display_if_more_than_max>1</number_of_persons_to_display_if_more_than_max>
         <overflow> et al.</overflow>
@@ -396,7 +396,7 @@
         <other_persons>{%Last%}, {%First:a%.}{ %Middle:a%.}</other_persons>
         <separator_between_if_two> &amp; </separator_between_if_two>
         <separator_between_if_more_than_two>, </separator_between_if_more_than_two>
-        <separator_before_last> &amp; </separator_before_last>
+        <separator_before_last>, &amp; </separator_before_last>
         <max_number_of_persons_to_display>20</max_number_of_persons_to_display>
         <number_of_persons_to_display_if_more_than_max>20</number_of_persons_to_display_if_more_than_max>
         <overflow> et al.</overflow>
@@ -411,7 +411,7 @@
         <other_persons>{%First:a%.}{ %Middle:a%.}{ %Last% }</other_persons>
         <separator_between_if_two> &amp; </separator_between_if_two>
         <separator_between_if_more_than_two>, </separator_between_if_more_than_two>
-        <separator_before_last> &amp; </separator_before_last>
+        <separator_before_last>, &amp; </separator_before_last>
         <max_number_of_persons_to_display>20</max_number_of_persons_to_display>
         <number_of_persons_to_display_if_more_than_max>20</number_of_persons_to_display_if_more_than_max>
         <overflow> et al.</overflow>
@@ -427,9 +427,9 @@
         <corporate>{%Corporate%}</corporate>
         <first_person>{%Last% }{%First:a%}{%Middle:a%}</first_person>
         <other_persons>{%Last% }{%First:a%}{%Middle:a%}</other_persons>
-        <separator_between_if_two> and </separator_between_if_two>
+        <separator_between_if_two> &amp; </separator_between_if_two>
         <separator_between_if_more_than_two>, </separator_between_if_more_than_two>
-        <separator_before_last> and </separator_before_last>
+        <separator_before_last>, &amp; </separator_before_last>
         <max_number_of_persons_to_display>20</max_number_of_persons_to_display>
         <number_of_persons_to_display_if_more_than_max>20</number_of_persons_to_display_if_more_than_max>
         <overflow> et al.</overflow>
@@ -437,22 +437,50 @@
         <multi_suffix></multi_suffix>
       </list>
         
-      <!-- tailor-made for Film and Television-->
-    <list name="exeproducer" id="5">
+      <!-- tailor-made for Television and TV Episodes-->
+    <list name="tvxproducer" id="5">
         <single_prefix></single_prefix>
         <multi_prefix></multi_prefix>
-        <corporate>{%Corporate%}</corporate>
         <first_person>{%First:a%.}{ %Middle:a%.}{ %Last% }</first_person>
         <other_persons>{%First:a%.}{ %Middle:a%.}{ %Last% }</other_persons>
-        <separator_between_if_two> and </separator_between_if_two>
+        <separator_between_if_two> &amp; </separator_between_if_two>
         <separator_between_if_more_than_two>, </separator_between_if_more_than_two>
-        <separator_before_last> and </separator_before_last>
+        <separator_before_last>, &amp; </separator_before_last>
         <max_number_of_persons_to_display>20</max_number_of_persons_to_display>
         <number_of_persons_to_display_if_more_than_max>20</number_of_persons_to_display_if_more_than_max>
         <overflow> et al.</overflow>
         <single_suffix> (Executive Producer)</single_suffix>
         <multi_suffix> (Executive Producers)</multi_suffix>
       </list>        
+    <list name="tvwriter" id="6">
+        <single_prefix></single_prefix>
+        <multi_prefix></multi_prefix>
+        <first_person>{%Last%}, {%First:a%.}{ %Middle:a%.}</first_person>
+        <other_persons>{%Last%}, {%First:a%.}{ %Middle:a%.}</other_persons>
+        <separator_between_if_two>, </separator_between_if_two>
+        <separator_between_if_more_than_two>, </separator_between_if_more_than_two>
+        <separator_before_last></separator_before_last>
+        <max_number_of_persons_to_display>20</max_number_of_persons_to_display>
+        <number_of_persons_to_display_if_more_than_max>20</number_of_persons_to_display_if_more_than_max>
+        <overflow> et al.</overflow>
+        <single_suffix> (Writer)</single_suffix>
+        <multi_suffix> (Writers)</multi_suffix>
+      </list>
+      <!-- tailor-made for Film-->
+    <list name="filmtvdirector" id="7">
+        <single_prefix></single_prefix>
+        <multi_prefix></multi_prefix>
+        <first_person>{%Last%}, {%First:a%.}{ %Middle:a%.}</first_person>
+        <other_persons>{%Last%}, {%First:a%.}{ %Middle:a%.}</other_persons>
+        <separator_between_if_two> &amp; </separator_between_if_two>
+        <separator_between_if_more_than_two>, </separator_between_if_more_than_two>
+        <separator_before_last>,  &amp; </separator_before_last>
+        <max_number_of_persons_to_display>20</max_number_of_persons_to_display>
+        <number_of_persons_to_display_if_more_than_max>20</number_of_persons_to_display_if_more_than_max>
+        <overflow> et al.</overflow>
+        <single_suffix> (Director)</single_suffix>
+        <multi_suffix> (Directors)</multi_suffix>
+      </list>           
     </namelists>
     <strings>
       <months>
