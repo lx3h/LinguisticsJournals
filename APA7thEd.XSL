@@ -279,7 +279,7 @@
         <column id="1">
           <halign>left</halign>
           <valign>top</valign>
-          <format>{%Author:2%.{ (%Year%{%YearSuffix%}, %Month% %Day%).}}{ &lt;i&gt;%Title% &lt;/i&gt; %Type%.}{. [%Medium%]}{, %City|CountryRegion%{, %StateProvince%}.}{ {https://doi.org/%DOI:l%} %URL:l% }</format>
+          <format>{%Author:2%.{ (%Year%{%YearSuffix%}, %Month% %Day%).}}{ &lt;i&gt;%Title% &lt;/i&gt; %Type%.}{. %ConferenceName%}{, %City|CountryRegion%{, %StateProvince%}.}{ {https://doi.org/%DOI:l%} %URL:l% }</format>
         </column>
         <sortkey>{%Author:0|Title|ShortTitle%}{ %Year%}{ %Title|ShortTitle%}</sortkey>
       </source>
