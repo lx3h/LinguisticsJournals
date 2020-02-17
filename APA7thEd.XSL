@@ -32,7 +32,7 @@
   <xsl:variable name="data">
     <general>
       <stylename>APA 7th Edition (Alpha)</stylename>
-      <version>2020.02.14</version>
+      <version>2020.02.17</version>
       <description>An implementation of the APA 7th Ed reference style based on the description by Scribbr.</description>
       <URL>https://www.scribbr.com/apa-style/apa-seventh-edition-changes/</URL>
       <author>Yves Dhondt (yves.dhondt@gmail.com), modified by Dr. Locky Law (lx3h@yahoo.com)</author>
@@ -218,7 +218,7 @@
         <format>{%CitationPrefix%}{%Author:1|Title%, }{%Year|"n.d."%{%YearSuffix%}}{%CitationSuffix%}</format>
       </source>
        <source type="Film">
-        <format>{%CitationPrefix%}{%Writer:1|Author:1|ProducerName:1|Director:1|ShortTitle|Title%, }{%Year|"n.d."%{%YearSuffix%}}{, %CitationPages:hhmmss. %}{%CitationSuffix%}</format>
+        <format>{%CitationPrefix%}{%Writer:1|Author:1|ProducerName:1|Director:1|ShortTitle|Title%, }{%YearAccessed|Year|"n.d."%{%YearSuffix%}}{, %CitationPages:hhmmss. %}{%CitationSuffix%}</format>
       </source>       
       <source type="InternetSite">
         <format>{%CitationPrefix%}{%Author:1|ShortTitle|Title%, }{%Year|"n.d."%{%YearSuffix%}}{, para. %CitationPages::%}{%CitationSuffix%}</format>
