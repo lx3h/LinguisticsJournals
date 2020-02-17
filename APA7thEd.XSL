@@ -114,10 +114,12 @@
         <!-- Tags for a TV Episode -->        
         <b:ImportantField>b:Author/b:Writer/b:NameList</b:ImportantField> <!-- Episode writer -->        
         <b:ImportantField>b:Author/b:Author/b:NameList</b:ImportantField> <!-- Episode director -->
-        <b:ImportantField>b:MonthAccessed</b:ImportantField> <!-- Month Aired -->
-        <b:ImportantField>b:DayAccessed</b:ImportantField> <!-- Day Aired -->
-        <b:ImportantField>b:YearAccessed</b:ImportantField> <!-- Year Aired -->
-        <b:ImportantField>b:ShortTitle</b:ImportantField>
+        <b:ImportantField>b:MonthAccessed</b:ImportantField> <!-- TV Episode Month Aired -->
+        <b:ImportantField>b:DayAccessed</b:ImportantField> <!-- TV Episode Day Aired -->
+        <b:ImportantField>b:YearAccessed</b:ImportantField> <!-- TV Episode Year Aired -->
+        <b:ImportantField>b:ShortTitle</b:ImportantField> <!-- TV Episode Title-->
+        <b:ImportantField>b:Volume</b:ImportantField> <!-- TV Episode Season Number-->
+        <b:ImportantField>b:Issue</b:ImportantField>  <!-- TV Episode Episode Number-->
       </source>
       <source type="InternetSite">
         <b:ImportantField>b:Author/b:Author/b:NameList</b:ImportantField>
@@ -303,7 +305,7 @@
         <column id="1">
           <halign>left</halign>
           <valign>top</valign>
-          <format>{%Writer:6%, &amp; %Author:7%.{{ (%YearAccessed%{%YearSuffix%}, %MonthAccessed% %DayAccessed%).}{ %ShortTitle% %Type%.} In}{ { %ProducerName:5%,} &lt;i&gt;%Title%&lt;/i&gt;.{ %ProductionCompany%.}}}{  {%Director:7%.} { (%Year%).} &lt;i&gt;%Title%&lt;/i&gt; %Type%.  { %ProductionCompany%.}}</format>
+          <format>{%Writer:6%, &amp; %Author:7%.{{ (%YearAccessed%{%YearSuffix%}, %MonthAccessed% %DayAccessed%).}{ %ShortTitle% (Season %Volume%, Episode %Issue%) %Type%.} In}{ { %ProducerName:5%,} &lt;i&gt;%Title%&lt;/i&gt;.{ %ProductionCompany%.}}}{  {%Director:7%.} { (%Year%).} &lt;i&gt;%Title%&lt;/i&gt; %Type%.  { %ProductionCompany%.}}</format>
         </column>
         <sortkey>{%Author:0|Editor:0|BookAuthor:0|Title|ShortTitle%}{ %Year%}{ %Title|ShortTitle%}</sortkey>
       </source>
