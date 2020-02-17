@@ -1,4 +1,4 @@
-Stylesheet for Microsoft Word 2007 Bibliography formatting. (Work on Microsoft Word for Office 365 as well)
+Stylesheet for Microsoft Word 2007 Referencing Style formatting. (Work on Microsoft Word for Office 365 as well)
      
 Author(s): Yves Dhondt (yves.dhondt@gmail.com), modified by Dr. Locky Law (lx3h@yahoo.com)
                
@@ -30,8 +30,8 @@ Installation Instructions:
 		
 		If your style does not appear in Word, it means there is a syntax error in your file and you should try to find out what is wrong.
 		
-		Please feel free to email me if you find any bugs you want me to fix. 
+		Please feel free to email Dr. Locky Law if you find any bugs you want me to fix. 
 
-Last update:	14 February 2020 by Dr. Locky Law
+Last update:	17 February 2020 by Dr. Locky Law
 
-Cite: Law, L. (2020). The Microsoft Word bibliography style extender for linguistics journals. GitHub. https://github.com/lx3h/LinguisticsJournals
+Cite: Law, L. (2020). The Microsoft Word referencing style extender for linguistics journals. GitHub. https://github.com/lx3h/LinguisticsJournals
