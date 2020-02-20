@@ -307,7 +307,7 @@
           <valign>top</valign>
           <format>{%Writer:6%, &amp; %Author:7%.{{ (%YearAccessed%{%YearSuffix%}, %MonthAccessed% %DayAccessed%).}{ %ShortTitle% (Season %Volume%, Episode %Issue%) %Type%.} In}{ { %ProducerName:5%,} &lt;i&gt;%Title%&lt;/i&gt;.{ %ProductionCompany%.}}}{  {%Director:7%.} { (%Year%).} &lt;i&gt;%Title%&lt;/i&gt; %Type%.  { %ProductionCompany%.}}</format>
         </column>
-        <sortkey>{%Author:0|Editor:0|BookAuthor:0|Title|ShortTitle%}{ %Year%}{ %Title|ShortTitle%}</sortkey>
+        <sortkey>{%Writer:0|Author:0|ProducerName:0|Director:0|Title|ShortTitle%}{ %Year%}{ %Title|ShortTitle%}</sortkey>
       </source>
       <source type="InternetSite">
         <column id="1">
@@ -545,7 +545,7 @@
         <yearsuffix>{%Author:1|ShortTitle|Title%}{%Year%}</yearsuffix>
       </source>
       <source type="Film">
-        <yearsuffix>{%ProducerName:1|Director:1|Title%}{%Year%}</yearsuffix>
+        <yearsuffix>{%Writer:1|Author:1|ProducerName:1|Director:1|Title%}{%Year%}</yearsuffix>
       </source>
       <source type="InternetSite">
         <yearsuffix>{%Author:1|ShortTitle|Title%}{%Year%}</yearsuffix>
