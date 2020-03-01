@@ -281,7 +281,7 @@
         <column id="1">
           <halign>left</halign>
           <valign>top</valign>
-          <format>{%Author:2%.{ (%Year%{%YearSuffix%}, %Month% %Day%).}}{ &lt;i&gt;%Title% &lt;/i&gt; %Type%.}{. %ConferenceName%}{, %City|CountryRegion%{, %StateProvince%}.}{ {https://doi.org/%DOI%} %URL:l% }</format>
+          <format>{%Author:2%.{ (%Year%{%YearSuffix%}{, %Month%{ %Day%}}).}}{ &lt;i&gt;%Title% &lt;/i&gt; %Type%.}{. %ConferenceName%}{, %City|CountryRegion%{, %StateProvince%}.}{ {https://doi.org/%DOI%} %URL:l% }</format>
         </column>
         <sortkey>{%Author:0|Title|ShortTitle%}{ %Year%}{ %Title|ShortTitle%}</sortkey>
       </source>
@@ -297,7 +297,7 @@
         <column id="1">
           <halign>left</halign>
           <valign>top</valign>
-          <format>{%Author:2%.  { (%Year%{%YearSuffix%}, %Month% %Day%).}}{ &lt;i&gt;%Title% &lt;/i&gt; %Type%.}{ %InternetSiteTitle%.}{ %URL:l%}</format>
+          <format>{%Author:2%.  { (%Year%{%YearSuffix%}{, %Month%{ %Day%}}).}}{ &lt;i&gt;%Title% &lt;/i&gt; %Type%.}{ %InternetSiteTitle%.}{ %URL:l%}</format>
         </column>
         <sortkey>{%Author:0|Title|InternetSiteTitle%}{ %Year%}{ %Title|InternetSiteTitle%}</sortkey>
       </source>
@@ -313,7 +313,7 @@
         <column id="1">
           <halign>left</halign>
           <valign>top</valign>
-          <format>{%Author:2%.{ (%Year%{%YearSuffix%}, %Month% %Day%).}}{ &lt;i&gt;%Title%&lt;/i&gt;.}{ %InternetSiteTitle%.}{{ Retrieved { %MonthAccessed:s%{ %DayAccessed%}}, %YearAccessed%, from} %URL:l%}</format>
+          <format>{%Author:2%.{ (%Year%{%YearSuffix%}{, %Month%{ %Day%}}).}}{ &lt;i&gt;%Title%&lt;/i&gt;.}{ %InternetSiteTitle%.}{{ Retrieved { %MonthAccessed:s%{ %DayAccessed%}}, %YearAccessed%, from} %URL:l%}</format>
         </column>
         <sortkey>{%Author:0|Title|ShortTitle|InternetSiteTitle%}{ %Year%}{ %Title|ShortTitle|InternetSiteTitle%}</sortkey>
       </source>
@@ -337,7 +337,7 @@
         <column id="1">
           <halign>left</halign>
           <valign>top</valign>
-          <format>{%Author:2%.{ (%Year%{%YearSuffix%}, %Month% %Day%).}}{ &lt;i&gt;%Title% &lt;/i&gt; [Video].}{ %InternetSiteTitle%.}{ %URL:l%{ ( {{%DayAccessed% }%MonthAccessed:s%}, %YearAccessed%)}}</format>
+          <format>{%Author:2%.{ (%Year%{%YearSuffix%}{, %Month%{ %Day%}}).}}{ &lt;i&gt;%Title% &lt;/i&gt; [Video].}{ %InternetSiteTitle%.}{ %URL:l%{ ( {{%DayAccessed% }%MonthAccessed:s%}, %YearAccessed%)}}</format>
         </column>
         <sortkey>{%Author:0|Title|InternetSiteTitle%}{ %Year%}{ %Title|ShortTitle|InternetSiteTitle%}</sortkey>
       </source>
@@ -353,7 +353,7 @@
         <column id="1">
           <halign>left</halign>
           <valign>top</valign>
-          <format>{%Author:2%. [%Publisher%]. { (%Year%{%YearSuffix%}, %Month% %Day%).}}{ &lt;i&gt;%Title% &lt;/i&gt; %Type%.}{ %InternetSiteTitle%.}{ %URL:l%}</format>
+          <format>{%Author:2%. [%Publisher%]. { (%Year%{%YearSuffix%}{, %Month%{ %Day%}}).}}{ &lt;i&gt;%Title% &lt;/i&gt; %Type%.}{ %InternetSiteTitle%.}{ %URL:l%}</format>
         </column>
         <sortkey>{%Author:0|Title|InternetSiteTitle%}{ %Year%}{ %Title|InternetSiteTitle%}</sortkey>
       </source>
