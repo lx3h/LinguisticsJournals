@@ -321,9 +321,9 @@
         <column id="1">
           <halign>left</halign>
           <valign>top</valign>
-          <format>{%Author:2%{ (%Year|"n.d"%{%YearSuffix%}).}}{ %Title|ShortTitle%{. &lt;i&gt;%JournalName%&lt;/i&gt;}}{ &lt;i&gt;%JournalName%&lt;/i&gt;}{, &lt;i&gt;%Volume%&lt;/i&gt;}{ (%Issue%)}{, %Pages%.}{ https://doi.org/%DOI%}</format>
+          <format>{%Author:2|Editor:3%{ (%Year|"n.d"%{%YearSuffix%}).}}{ %Title|ShortTitle%{. &lt;i&gt;%JournalName%&lt;/i&gt;}}{ &lt;i&gt;%JournalName%&lt;/i&gt;}{, &lt;i&gt;%Volume%&lt;/i&gt;}{ (%Issue%)}{, %Pages%.}{ https://doi.org/%DOI%}</format>
         </column>
-        <sortkey>{%Author:0|Title|ShortTitle%}{ %Year%}{ %Title|ShortTitle%}</sortkey>
+        <sortkey>{%Author:0|Editor:0|Title|ShortTitle%}{ %Year%}{ %Title|ShortTitle%}</sortkey>
       </source>
       <source type="Report">
         <column id="1">
