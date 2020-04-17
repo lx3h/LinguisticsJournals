@@ -95,9 +95,9 @@
       </source>        
       <source type="FacebookPost">
         <b:ImportantField>b:Author/b:Author/b:NameList</b:ImportantField>
-        <b:ImportantField>b:Title</b:ImportantField>
-        <b:ImportantField>b:Type</b:ImportantField>          
-        <b:ImportantField>b:InternetSiteTitle</b:ImportantField>
+        <b:ImportantField>b:Title</b:ImportantField>                        <!-- First 20 words of Post -->
+        <b:ImportantField>b:Type</b:ImportantField>                         <!-- Attachments and format -->
+        <b:ImportantField>b:InternetSiteTitle</b:ImportantField>            <!-- Title of Social Media Site -->
         <b:ImportantField>b:Day</b:ImportantField>
         <b:ImportantField>b:Month</b:ImportantField>
         <b:ImportantField>b:Year</b:ImportantField>
@@ -112,14 +112,14 @@
         <b:ImportantField>b:Type</b:ImportantField>
         <b:ImportantField>b:ProductionCompany</b:ImportantField>
         <!-- Tags for a TV Episode -->        
-        <b:ImportantField>b:Author/b:Writer/b:NameList</b:ImportantField> <!-- Episode writer -->        
-        <b:ImportantField>b:Author/b:Author/b:NameList</b:ImportantField> <!-- Episode director -->
-        <b:ImportantField>b:MonthAccessed</b:ImportantField> <!-- TV Episode Month Aired -->
-        <b:ImportantField>b:DayAccessed</b:ImportantField> <!-- TV Episode Day Aired -->
-        <b:ImportantField>b:YearAccessed</b:ImportantField> <!-- TV Episode Year Aired -->
-        <b:ImportantField>b:ShortTitle</b:ImportantField> <!-- TV Episode Title-->
-        <b:ImportantField>b:Volume</b:ImportantField> <!-- TV Episode Season Number-->
-        <b:ImportantField>b:Issue</b:ImportantField>  <!-- TV Episode Episode Number-->
+        <b:ImportantField>b:Author/b:Writer/b:NameList</b:ImportantField>   <!-- Episode writer -->        
+        <b:ImportantField>b:Author/b:Author/b:NameList</b:ImportantField>   <!-- Episode director -->
+        <b:ImportantField>b:MonthAccessed</b:ImportantField>                <!-- TV Episode Month Aired -->
+        <b:ImportantField>b:DayAccessed</b:ImportantField>                  <!-- TV Episode Day Aired -->
+        <b:ImportantField>b:YearAccessed</b:ImportantField>                 <!-- TV Episode Year Aired -->
+        <b:ImportantField>b:ShortTitle</b:ImportantField>                   <!-- TV Episode Title-->
+        <b:ImportantField>b:Volume</b:ImportantField>                       <!-- TV Episode Season Number-->
+        <b:ImportantField>b:Issue</b:ImportantField>                        <!-- TV Episode Episode Number-->
       </source>
       <source type="InternetSite">
         <b:ImportantField>b:Author/b:Author/b:NameList</b:ImportantField>
@@ -181,10 +181,10 @@
       </source>
       <source type="Tweet">
         <b:ImportantField>b:Author/b:Author/b:NameList</b:ImportantField>
-        <b:ImportantField>b:Publisher</b:ImportantField>          
-        <b:ImportantField>b:Title</b:ImportantField>
-        <b:ImportantField>b:Type</b:ImportantField>          
-        <b:ImportantField>b:InternetSiteTitle</b:ImportantField>
+        <b:ImportantField>b:Publisher</b:ImportantField>                    <!-- Twitter handle -->
+        <b:ImportantField>b:Title</b:ImportantField>                        <!-- First 20 words of Tweet -->
+        <b:ImportantField>b:Type</b:ImportantField>                         <!-- Attachments and format -->
+        <b:ImportantField>b:InternetSiteTitle</b:ImportantField>            <!-- Title of Social Media Site -->
         <b:ImportantField>b:Day</b:ImportantField>
         <b:ImportantField>b:Month</b:ImportantField>
         <b:ImportantField>b:Year</b:ImportantField>
