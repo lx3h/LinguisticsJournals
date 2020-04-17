@@ -34,4 +34,4 @@ Installation Instructions:
 
 Last update:	1 March 2020 by Dr. Locky Law
 
-Cite: Law, L. (2020, March 1). The Microsoft Word referencing style extender for linguistics journals. GitHub. https://github.com/lx3h/LinguisticsJournals
+Cite: Law, L. (2020, April 17). The Microsoft Word referencing style extender for linguistics journals. GitHub. https://github.com/lx3h/LinguisticsJournals
