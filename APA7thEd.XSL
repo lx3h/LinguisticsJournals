@@ -353,7 +353,7 @@
         <column id="1">
           <halign>left</halign>
           <valign>top</valign>
-          <format>{%Author:2%. [%Publisher%]. { (%Year%{%YearSuffix%}{, %Month%{ %Day%}}).}}{ &lt;i&gt;%Title% &lt;/i&gt; %Type%.}{ %InternetSiteTitle%.}{ %URL:l%}</format>
+          <format>{%Author:2%. [%Publisher%]. { (%Year%{%YearSuffix%}{, %Month%{ %Day%}}).}}{ &lt;i&gt;%Title% &lt;/i&gt;} {%Type%.}{ %InternetSiteTitle%.}{ %URL:l%}</format>
         </column>
         <sortkey>{%Author:0|Title|InternetSiteTitle%}{ %Year%}{ %Title|InternetSiteTitle%}</sortkey>
       </source>
