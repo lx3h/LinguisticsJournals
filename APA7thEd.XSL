@@ -32,7 +32,7 @@
   <xsl:variable name="data">
     <general>
       <stylename>APA 7th Edition (Alpha)</stylename>
-      <version>2020.02.20</version>
+      <version>2020.04.17</version>
       <description>An implementation of the APA 7th Ed reference style based on the description by Scribbr.</description>
       <URL>https://www.scribbr.com/apa-style/apa-seventh-edition-changes/</URL>
       <author>Yves Dhondt (yves.dhondt@gmail.com), modified by Dr. Locky Law (lx3h@yahoo.com)</author>
@@ -226,7 +226,7 @@
         <format>{%CitationPrefix%}{%Author:1|ShortTitle|Title%, }{%Year|"n.d."%{%YearSuffix%}}{, para. %CitationPages::%}{%CitationSuffix%}</format>
       </source>
       <source type="JournalArticle">
-        <format>{%CitationPrefix%}{%Author:1|ShortTitle|Title%, }{%Year|"n.d."%{%YearSuffix%}}{, %CitationPages:p. :pp.%}{%CitationSuffix%}</format>
+        <format>{%CitationPrefix%}{%Author:1|Editor:1|ShortTitle|Title%, }{%Year|"n.d."%{%YearSuffix%}}{, %CitationPages:p. :pp.%}{%CitationSuffix%}</format>
       </source>
       <source type="Misc">
         <format>{%CitationPrefix%}{%Author:1|Editor:1|ShortTitle|Title%, }{%Year|"n.d."%{%YearSuffix%}}{, %CitationPages:p. :pp.%}{%CitationSuffix%}</format>
@@ -930,6 +930,8 @@
               <xsl:with-param name="source" select="."/>
             </xsl:call-template>
           </b:Source>
+
+            
         </xsl:for-each>
 
         <!-- With the exception of the b:Source elements, copy all elements (not really used by the stylesheets). -->
@@ -941,6 +943,7 @@
           </xsl:if>
         </xsl:for-each>-->
 
+          
       </b:Bibliography>
     </xsl:variable>
 
