@@ -25,13 +25,10 @@ Copyright: Copyright (c) 2008 Yves Dhondt
 Installation Instructions:
 		Just place:
 			1. the .XSL files you need, and types.xml into the folder %userprofile%\AppData\Roaming\Microsoft\Bibliography\Style
-			2. the BIBFORM.XML into the folder C:\Program Files (x86)\Microsoft Office\root\Office16\1033\Bibliography
-		then restart Microsoft Word to use the new citation and bibliography styles.
-		
-		If your style does not appear in Word, it means there is a syntax error in your file and you should try to find out what is wrong.
+			2. the BIBFORM.XML into the folder C:\Program Files (x86)\Microsoft Office\root\Office16\1033\Bibliography then restart Microsoft Word to use the new citation and bibliography styles. (This will need to be reperformed if the desired "Type of Source" under "Insert Citation" is no longer there. That's because MS Word does update this file whenever it detects a change to it.)
 		
 		Please feel free to email Dr. Locky Law if you find any bugs you want me to fix. 
 
 Last update:	1 March 2020 by Dr. Locky Law
 
-Cite: Law, L. (2020, April 17). The Microsoft Word referencing style extender for linguistics journals. GitHub. https://github.com/lx3h/LinguisticsJournals
+Cite: Law, L. (2020, April 22). The Microsoft Word referencing style extender for linguistics journals. GitHub. https://github.com/lx3h/LinguisticsJournals
