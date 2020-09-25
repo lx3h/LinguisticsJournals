@@ -1,6 +1,6 @@
 Stylesheet for Microsoft Word 2007 Referencing Style formatting. (Work on Microsoft Word for Office 365 as well)
      
-Author(s): Yves Dhondt (yves.dhondt@gmail.com), modified by Dr. Locky Law (lx3h@yahoo.com)
+Author(s): Yves Dhondt (yves.dhondt@gmail.com), extended by Dr. Locky Law (lx3h@yahoo.com)
                
 Copyright: Copyright (c) 2008 Yves Dhondt
 
