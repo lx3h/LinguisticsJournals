@@ -32,7 +32,7 @@
   <xsl:variable name="data">
     <general>
       <stylename>APA 7th Edition (Alpha)</stylename>
-      <version>2020.09.25</version>
+      <version>2021.01.18</version>
       <description>An implementation of the APA 7th Ed reference style based on the description by Scribbr.</description>
       <URL>https://www.scribbr.com/apa-style/apa-seventh-edition-changes/</URL>
       <author>Yves Dhondt (yves.dhondt@gmail.com), modified by Dr. Locky Law (lx3h@yahoo.com)</author>
@@ -105,7 +105,7 @@
       </source>
       <source type="Film">
         <!-- Tags for Film and Televsion -->
-        <b:ImportantField>b:Author/b:ProducerName/b:NameList</b:ImportantField> <!-- Executive producer -->
+        <b:ImportantField>b:Author/b:ProducerName/b:NameList</b:ImportantField> <!-- TV Executive producer -->
         <b:ImportantField>b:Author/b:Director/b:NameList</b:ImportantField> <!-- Film or Series director -->
         <b:ImportantField>b:Year</b:ImportantField>
         <b:ImportantField>b:Title</b:ImportantField>
@@ -475,7 +475,7 @@
         <first_person>{%Last%}, {%First:a%.}{ %Middle:a%.}</first_person>
         <other_persons>{%Last%}, {%First:a%.}{ %Middle:a%.}</other_persons>
         <separator_between_if_two> &amp; </separator_between_if_two>
-        <separator_between_if_more_than_two>, </separator_between_if_more_than_two>
+        <separator_between_if_more_than_two>, &amp; </separator_between_if_more_than_two>
         <separator_before_last>,  &amp; </separator_before_last>
         <max_number_of_persons_to_display>20</max_number_of_persons_to_display>
         <number_of_persons_to_display_if_more_than_max>20</number_of_persons_to_display_if_more_than_max>
