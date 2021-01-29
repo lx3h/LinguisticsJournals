@@ -32,7 +32,7 @@
   <xsl:variable name="data">
     <general>
       <stylename>APA 7th Edition (Alpha)</stylename>
-      <version>2021.01.18</version>
+      <version>2021.01.29</version>
       <description>An implementation of the APA 7th Ed reference style based on the description by Scribbr.</description>
       <URL>https://www.scribbr.com/apa-style/apa-seventh-edition-changes/</URL>
       <author>Yves Dhondt (yves.dhondt@gmail.com), modified by Dr. Locky Law (lx3h@yahoo.com)</author>
@@ -77,9 +77,11 @@
         <b:ImportantField>b:Month</b:ImportantField>
         <b:ImportantField>b:Day</b:ImportantField>
         <b:ImportantField>b:Title</b:ImportantField>
-        <b:ImportantField>b:Type</b:ImportantField>     
+        <b:ImportantField>b:Type</b:ImportantField>    
+        <b:ImportantField>b:Author/b:Editor/b:NameList</b:ImportantField>
         <b:ImportantField>b:ConferenceName</b:ImportantField>
         <b:ImportantField>b:City</b:ImportantField>
+        <b:ImportantField>b:Pages</b:ImportantField>
         <b:ImportantField>b:DOI</b:ImportantField>
         <b:ImportantField>b:URL</b:ImportantField>  
       </source>
@@ -265,7 +267,7 @@
         <column id="1">
           <halign>left</halign>
           <valign>top</valign>
-          <format>{%Author:2|Editor:3%{ (%Year|"n.d"%{%YearSuffix%}).}}{ &lt;i&gt;%Title|ShortTitle%&lt;/i&gt;{, %Edition:os% edition}{ (%Year%{%YearSuffix%})}.}{ %Publisher%.}{ https://doi.org/%DOI%.{ %URL:l% }}</format>
+          <format>{%Author:2|Editor:3%{ (%Year|"n.d"%{%YearSuffix%}).}}{ &lt;i&gt;%Title|ShortTitle%&lt;/i&gt;{, %Edition:os% edition}{ (%Year%{%YearSuffix%})}.}{ %Publisher%.}{ https://doi.org/%DOI:l%}{ %URL:l% }</format>
         </column>
         <sortkey>{%Author:0|Editor:0|Title|ShortTitle%}{ %Year%}{ %Title|ShortTitle%}</sortkey>
       </source>
@@ -273,7 +275,7 @@
         <column id="1">
           <halign>left</halign>
           <valign>top</valign>
-          <format>{%Author:2|Editor:3|BookAuthor:2%{ (%Year|"n.d"%{%YearSuffix%}).}}{ %Title|ShortTitle%}{. In{ %Editor:3|BookAuthor:2%}, &lt;i&gt;%BookTitle%&lt;/i&gt;{ (%Edition:os% ed)}}{ (%Pages:p. :pp. %)}. { %Publisher%.}{ https://doi.org/%DOI%.{ %URL:l% }}</format>
+          <format>{%Author:2|Editor:3|BookAuthor:2%{ (%Year|"n.d"%{%YearSuffix%}).}}{ %Title|ShortTitle%}{. In{ %Editor:3|BookAuthor:2%}, &lt;i&gt;%BookTitle%&lt;/i&gt;{ (%Edition:os% ed)}}{ (%Pages:p. :pp. %)}. { %Publisher%.}{ https://doi.org/%DOI:l%}{ %URL:l% }</format>
         </column>
         <sortkey>{%Author:0|Editor:0|BookAuthor:0|Title|ShortTitle%}{ %Year%}{ %Title|ShortTitle%}</sortkey>
       </source>
@@ -281,7 +283,7 @@
         <column id="1">
           <halign>left</halign>
           <valign>top</valign>
-          <format>{%Author:2%.{ (%Year%{%YearSuffix%}{, %Month%{ %Day%}}).}}{ &lt;i&gt;%Title% &lt;/i&gt; %Type%.}{. %ConferenceName%}{, %City|CountryRegion%{, %StateProvince%}.}{ https://doi.org/%DOI%.{ %URL:l% }}</format>
+          <format>{%Author:2%.{ (%Year%{%YearSuffix%}{, %Month%{ %Day%}}).}}{ &lt;i&gt;%Title% &lt;/i&gt; %Type%.}{In %Editor:3|BookAuthor:2%}{. %ConferenceName%}{, %City|CountryRegion%{, %StateProvince%}{ (%Pages:p. :pp. %).}.}{ https://doi.org/%DOI:l%}{ %URL:l% }</format>
         </column>
         <sortkey>{%Author:0|Title|ShortTitle%}{ %Year%}{ %Title|ShortTitle%}</sortkey>
       </source>
@@ -321,7 +323,7 @@
         <column id="1">
           <halign>left</halign>
           <valign>top</valign>
-          <format>{%Author:2|Editor:3%{ (%Year|"n.d"%{%YearSuffix%}).}}{ %Title|ShortTitle%{. &lt;i&gt;%JournalName%&lt;/i&gt;}}{ &lt;i&gt;%JournalName%&lt;/i&gt;}{, &lt;i&gt;%Volume%&lt;/i&gt;}{ (%Issue%)}{, %Pages%.} {https://doi.org/%DOI%}</format>
+          <format>{%Author:2|Editor:3%{ (%Year|"n.d"%{%YearSuffix%}).}}{ %Title|ShortTitle%{. &lt;i&gt;%JournalName%&lt;/i&gt;}}{ &lt;i&gt;%JournalName%&lt;/i&gt;}{, &lt;i&gt;%Volume%&lt;/i&gt;}{ (%Issue%)}{, %Pages%.} { https://doi.org/%DOI:l%}{ %URL:l% }</format>
         </column>
         <sortkey>{%Author:0|Editor:0|Title|ShortTitle%}{ %Year%}{ %Title|ShortTitle%}</sortkey>
       </source>
@@ -345,7 +347,7 @@
         <column id="1">
           <halign>left</halign>
           <valign>top</valign>
-          <format>{%Author:2|Title%.}{ (%Year%{%YearSuffix%}).}{ &lt;i&gt;%Title%&lt;/i&gt;} { [%ThesisType%, %Institution%].} {%Comments%.}{ https://doi.org/%DOI%.{ %URL:l% }}</format>
+          <format>{%Author:2|Title%.}{ (%Year%{%YearSuffix%}).}{ &lt;i&gt;%Title%&lt;/i&gt;} { [%ThesisType%, %Institution%].} {%Comments%.}{ https://doi.org/%DOI:l%}{ %URL:l% }</format>
         </column>
         <sortkey>{%Author:0|Editor:0|Title|ShortTitle%}{ %Year%}{ %Title|ShortTitle%}</sortkey>
       </source>
