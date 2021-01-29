@@ -33,7 +33,7 @@
     <general>
       <stylename>LanguageContextAndText</stylename>
       <version>2019.01.08</version>
-      <author>Yves Dhondt (yves.dhondt@gmail.com), modified by Dr. Locky Law (lx3h@yahoo.com)</author>
+      <author>Dr. Locky Law (lx3h@yahoo.com)</author>
       <description>An implementation of the reference style used by DEGRUYTER.</description>
       <URL>https://linguistlist.org/pubs/tocs/JournalUnifiedStyleSheet2007.pdf</URL>
       <comments>

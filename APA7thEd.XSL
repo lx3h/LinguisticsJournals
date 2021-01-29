@@ -35,7 +35,7 @@
       <version>2021.01.29</version>
       <description>An implementation of the APA 7th Ed reference style based on the description by Scribbr.</description>
       <URL>https://www.scribbr.com/apa-style/apa-seventh-edition-changes/</URL>
-      <author>Yves Dhondt (yves.dhondt@gmail.com), modified by Dr. Locky Law (lx3h@yahoo.com)</author>
+      <author>Dr. Locky Law (lx3h@yahoo.com)</author>
       <comments>
         Based on https://youtu.be/zeSIXD6y3WQ
       </comments>

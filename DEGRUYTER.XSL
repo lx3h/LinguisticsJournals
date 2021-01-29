@@ -33,7 +33,7 @@
     <general>
       <stylename>DEGRUYTER</stylename>
       <version>2018.11.27</version>
-      <author>Yves Dhondt (yves.dhondt@gmail.com), modified by Dr. Locky Law (lx3h@yahoo.com)</author>
+      <author>Dr. Locky Law (lx3h@yahoo.com)</author>
       <description>An implementation of the reference style used by the American Sociological Association.</description>
       <URL>http://www.degruyter.com/staticfiles/pdfs/mouton_journal_stylesheet.pdf</URL>
       <comments>

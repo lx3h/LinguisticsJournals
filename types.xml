@@ -342,6 +342,8 @@
     <DataTag>b:Type</DataTag>   
     <DataTag>b:Publisher</DataTag>
     <DataTag>b:City</DataTag>
+    <DataTag>b:Volume</DataTag>
+    <DataTag>b:Issue</DataTag>
     <!-- End extra tags. -->
   </Type>
   <Type Name="Interview">

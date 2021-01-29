@@ -35,7 +35,7 @@
       <version>2018.11.26</version>
       <description>An implementation of the Harvard reference style based on the description by the University of Exeter.</description>
       <URL>https://www.euppublishing.com/page/cor/submissions</URL>
-      <author>Yves Dhondt (yves.dhondt@gmail.com), modified by Dr. Locky Law (lx3h@yahoo.com)</author>
+      <author>Dr. Locky Law (lx3h@yahoo.com)</author>
       <comments>
         Based on https://www.euppublishing.com/page/cor/submissions
         Article in a periodical is 'Frozen'. Uncomment them if you want to 'Let It Go'.
