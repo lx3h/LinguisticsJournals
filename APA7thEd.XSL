@@ -31,7 +31,7 @@
   <!-- Variable containing all necessary data for a certain style of bibliography. -->
   <xsl:variable name="data">
     <general>
-      <stylename>APA 7th Edition (Alpha)</stylename>
+      <stylename>APA 7th Edition (Beta)</stylename>
       <version>2021.01.29</version>
       <description>An implementation of the APA 7th Ed reference style based on the description by Scribbr.</description>
       <URL>https://www.scribbr.com/apa-style/apa-seventh-edition-changes/</URL>
