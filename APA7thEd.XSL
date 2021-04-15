@@ -32,7 +32,7 @@
   <xsl:variable name="data">
     <general>
       <stylename>APA 7th Edition (Beta)</stylename>
-      <version>2021.01.29</version>
+      <version>2021.04.06</version>
       <description>An implementation of the APA 7th Ed reference style based on the description by Scribbr.</description>
       <URL>https://www.scribbr.com/apa-style/apa-seventh-edition-changes/</URL>
       <author>Dr. Locky Law (lx3h@yahoo.com)</author>
@@ -204,16 +204,16 @@
         <format>[%Tag%]</format>
       </source>
       <source type="ArticleInAPeriodical">
-        <format>{%CitationPrefix%}{%Author:1|ShortTitle|Title%, }{%Year|"n.d."%{%YearSuffix%}}{, %CitationPages:p. :pp.%}{%CitationSuffix%}</format>
+        <format>{%CitationPrefix%}{%Author:1|ShortTitle|Title%, }{%Year|"n.d."%{%YearSuffix%}}{, %CitationPages:p. :pp. %}{%CitationSuffix%}</format>
       </source>
       <source type="Book">
-        <format>{%CitationPrefix%}{%Author:1|Editor:1|ShortTitle|Title%, }{%Year|"n.d."%{%YearSuffix%}}{, %CitationPages:p. :pp.%}{%CitationSuffix%}</format>
+        <format>{%CitationPrefix%}{%Author:1|Editor:1|ShortTitle|Title%, }{%Year|"n.d."%{%YearSuffix%}}{, %CitationPages:p. :pp. %}{%CitationSuffix%}</format>
       </source>
       <source type="BookSection">
-        <format>{%CitationPrefix%}{%Author:1|Editor:1|BookAuthor:1|ShortTitle|Title|BookTitle%, }{%Year|"n.d."%{%YearSuffix%}}{, %CitationPages:p. :pp.%}{%CitationSuffix%}</format>
+        <format>{%CitationPrefix%}{%Author:1|Editor:1|BookAuthor:1|ShortTitle|Title|BookTitle%, }{%Year|"n.d."%{%YearSuffix%}}{, %CitationPages:p. :pp. %}{%CitationSuffix%}</format>
       </source>
       <source type="ConferenceProceedings">
-        <format>{%CitationPrefix%}{%Author:1|ShortTitle|Title%, }{%Year|"n.d."%{%YearSuffix%}}{, %CitationPages:p. :pp.%}{%CitationSuffix%}</format>
+        <format>{%CitationPrefix%}{%Author:1|ShortTitle|Title%, }{%Year|"n.d."%{%YearSuffix%}}{, %CitationPages:p. :pp. %}{%CitationSuffix%}</format>
       </source>
       <source type="DictionaryEntry">
         <format>{%CitationPrefix%}{%Author:1|Title%, }{%Year|"n.d."%{%YearSuffix%}}{%CitationSuffix%}</format>
@@ -228,10 +228,10 @@
         <format>{%CitationPrefix%}{%Author:1|ShortTitle|Title%, }{%Year|"n.d."%{%YearSuffix%}}{, para. %CitationPages::%}{%CitationSuffix%}</format>
       </source>
       <source type="JournalArticle">
-        <format>{%CitationPrefix%}{%Author:1|Editor:1|ShortTitle|Title%, }{%Year|"n.d."%{%YearSuffix%}}{, %CitationPages:p. :pp.%}{%CitationSuffix%}</format>
+        <format>{%CitationPrefix%}{%Author:1|Editor:1|ShortTitle|Title%, }{%Year|"n.d."%{%YearSuffix%}}{, %CitationPages:p. :pp. %}{%CitationSuffix%}</format>
       </source>
       <source type="Misc">
-        <format>{%CitationPrefix%}{%Author:1|Editor:1|ShortTitle|Title%, }{%Year|"n.d."%{%YearSuffix%}}{, %CitationPages:p. :pp.%}{%CitationSuffix%}</format>
+        <format>{%CitationPrefix%}{%Author:1|Editor:1|ShortTitle|Title%, }{%Year|"n.d."%{%YearSuffix%}}{, %CitationPages:p. :pp. %}{%CitationSuffix%}</format>
       </source>
       <source type="OnlineVideo">
         <format>{%CitationPrefix%}{%Author:1|Title%, }{%Year|"n.d."%{%YearSuffix%}}{%CitationSuffix%}</format>
