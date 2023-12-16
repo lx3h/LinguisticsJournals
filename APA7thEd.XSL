@@ -267,7 +267,7 @@
         <column id="1">
           <halign>left</halign>
           <valign>top</valign>
-          <format>{%Author:2|Editor:3%{ (%Year|"n.d"%{%YearSuffix%}).}}{ &lt;i&gt;%Title|ShortTitle%&lt;/i&gt;{, %Edition:os% edition}{ (%Year%{%YearSuffix%})}.}{ %Publisher%.}{ https://doi.org/%DOI:l%}{ %URL:l% }</format>
+          <format>{%Author:2|Editor:3%{ (%Year|"n.d"%{%YearSuffix%}).}}{ &lt;i&gt;%Title|ShortTitle%&lt;/i&gt;{, %Edition:os% edition}{ (%Year%{%YearSuffix%})}.}{ %Publisher%.}{ https://doi.org/%DOI%}{ %URL% }</format>
         </column>
         <sortkey>{%Author:0|Editor:0|Title|ShortTitle%}{ %Year%}{ %Title|ShortTitle%}</sortkey>
       </source>
@@ -275,7 +275,7 @@
         <column id="1">
           <halign>left</halign>
           <valign>top</valign>
-          <format>{%Author:2|Editor:3|BookAuthor:2%{ (%Year|"n.d"%{%YearSuffix%}).}}{ %Title|ShortTitle%}{. In{ %Editor:3|BookAuthor:2%}, &lt;i&gt;%BookTitle%&lt;/i&gt;{ (%Edition:os% ed)}}{ (%Pages:p. :pp. %)}. { %Publisher%.}{ https://doi.org/%DOI:l%}{ %URL:l% }</format>
+          <format>{%Author:2|Editor:3|BookAuthor:2%{ (%Year|"n.d"%{%YearSuffix%}).}}{ %Title|ShortTitle%}{. In{ %Editor:3|BookAuthor:2%}, &lt;i&gt;%BookTitle%&lt;/i&gt;{ (%Edition:os% ed)}}{ (%Pages:p. :pp. %)}. { %Publisher%.}{ https://doi.org/%DOI%}{ %URL% }</format>
         </column>
         <sortkey>{%Author:0|Editor:0|BookAuthor:0|Title|ShortTitle%}{ %Year%}{ %Title|ShortTitle%}</sortkey>
       </source>
@@ -283,7 +283,7 @@
         <column id="1">
           <halign>left</halign>
           <valign>top</valign>
-          <format>{%Author:2%.{ (%Year%{%YearSuffix%}{, %Month%{ %Day%}}).}}{ &lt;i&gt;%Title% &lt;/i&gt; %Type%.}{In %Editor:3|BookAuthor:2%}{. %ConferenceName%}{, %City|CountryRegion%{, %StateProvince%}{ (%Pages:p. :pp. %).}.}{ https://doi.org/%DOI:l%}{ %URL:l% }</format>
+          <format>{%Author:2%.{ (%Year%{%YearSuffix%}{, %Month%{ %Day%}}).}}{ &lt;i&gt;%Title% &lt;/i&gt; %Type%.}{In %Editor:3|BookAuthor:2%}{. %ConferenceName%}{, %City|CountryRegion%{, %StateProvince%}{ (%Pages:p. :pp. %).}.}{ https://doi.org/%DOI%}{ %URL% }</format>
         </column>
         <sortkey>{%Author:0|Title|ShortTitle%}{ %Year%}{ %Title|ShortTitle%}</sortkey>
       </source>
@@ -291,7 +291,7 @@
         <column id="1">
           <halign>left</halign>
           <valign>top</valign>  
-          <format>{%Author:2%{ (%Year|"n.d"%{%YearSuffix%}).}}{ %Title%}{. In &lt;i&gt;%BookTitle%&lt;/i&gt;.}{{ Retrieved { %MonthAccessed:s%{ %DayAccessed%}}, %YearAccessed%, from} %URL:l%}</format>
+          <format>{%Author:2%{ (%Year|"n.d"%{%YearSuffix%}).}}{ %Title%}{. In &lt;i&gt;%BookTitle%&lt;/i&gt;.}{{ Retrieved { %MonthAccessed:s%{ %DayAccessed%}}, %YearAccessed%, from} %URL%}</format>
         </column>
         <sortkey>{%Author:0|Title%}{ %Year%}{ %Title|ShortTitle%}</sortkey>
       </source>
@@ -299,7 +299,7 @@
         <column id="1">
           <halign>left</halign>
           <valign>top</valign>
-          <format>{%Author:2%.  { (%Year%{%YearSuffix%}{, %Month%{ %Day%}}).}}{ &lt;i&gt;%Title% &lt;/i&gt; %Type%.}{ %InternetSiteTitle%.}{ %URL:l%}</format>
+          <format>{%Author:2%.  { (%Year%{%YearSuffix%}{, %Month%{ %Day%}}).}}{ &lt;i&gt;%Title% &lt;/i&gt; %Type%.}{ %InternetSiteTitle%.}{ %URL%}</format>
         </column>
         <sortkey>{%Author:0|Title|InternetSiteTitle%}{ %Year%}{ %Title|InternetSiteTitle%}</sortkey>
       </source>
@@ -315,7 +315,7 @@
         <column id="1">
           <halign>left</halign>
           <valign>top</valign>
-          <format>{%Author:2%.{ (%Year%{%YearSuffix%}{, %Month%{ %Day%}}).}}{ &lt;i&gt;%Title%&lt;/i&gt;.}{ %InternetSiteTitle%.}{{ Retrieved { %MonthAccessed:s%{ %DayAccessed%}}, %YearAccessed%, from} %URL:l%}</format>
+          <format>{%Author:2%.{ (%Year%{%YearSuffix%}{, %Month%{ %Day%}}).}}{ &lt;i&gt;%Title%&lt;/i&gt;.}{ %InternetSiteTitle%.}{{ Retrieved { %MonthAccessed:s%{ %DayAccessed%}}, %YearAccessed%, from} %URL%}</format>
         </column>
         <sortkey>{%Author:0|Title|ShortTitle|InternetSiteTitle%}{ %Year%}{ %Title|ShortTitle|InternetSiteTitle%}</sortkey>
       </source>
@@ -323,7 +323,7 @@
         <column id="1">
           <halign>left</halign>
           <valign>top</valign>
-          <format>{%Author:2|Editor:3%{ (%Year|"n.d"%{%YearSuffix%}).}}{ %Title|ShortTitle%{. &lt;i&gt;%JournalName%&lt;/i&gt;}}{ &lt;i&gt;%JournalName%&lt;/i&gt;}{, &lt;i&gt;%Volume%&lt;/i&gt;}{ (%Issue%)}{, %Pages%.} { https://doi.org/%DOI:l%}{ %URL:l% }</format>
+          <format>{%Author:2|Editor:3%{ (%Year|"n.d"%{%YearSuffix%}).}}{ %Title|ShortTitle%{. &lt;i&gt;%JournalName%&lt;/i&gt;}}{ &lt;i&gt;%JournalName%&lt;/i&gt;}{, &lt;i&gt;%Volume%&lt;/i&gt;}{ (%Issue%)}{, %Pages%.} { https://doi.org/%DOI%}{ %URL% }</format>
         </column>
         <sortkey>{%Author:0|Editor:0|Title|ShortTitle%}{ %Year%}{ %Title|ShortTitle%}</sortkey>
       </source>
@@ -331,7 +331,7 @@
         <column id="1">
           <halign>left</halign>
           <valign>top</valign>
-          <format>{%Author:2%.{ %Year|"n.d."%{%YearSuffix%}.}}{ “%Title%.”{ %Year%{%YearSuffix%}.}}{ %ThesisType%,}{ %Department%,}{ %Institution%,}{ %City|CountryRegion%{, %StateProvince%}}.{{ Retrieved { %MonthAccessed:s%{ %DayAccessed%}}, %YearAccessed%, from} %URL:l%}</format>
+          <format>{%Author:2%.{ %Year|"n.d."%{%YearSuffix%}.}}{ “%Title%.”{ %Year%{%YearSuffix%}.}}{ %ThesisType%,}{ %Department%,}{ %Institution%,}{ %City|CountryRegion%{, %StateProvince%}}.{{ Retrieved { %MonthAccessed:s%{ %DayAccessed%}}, %YearAccessed%, from} %URL%}</format>
         </column>
         <sortkey>{%Author:0|Title:a%}{ %Year%}{ %Title:a%}</sortkey>
       </source>
@@ -347,7 +347,7 @@
         <column id="1">
           <halign>left</halign>
           <valign>top</valign>
-          <format>{%Author:2|Title%.}{ (%Year%{%YearSuffix%}).}{ &lt;i&gt;%Title%&lt;/i&gt;} { [%ThesisType%, %Institution%].} {%Comments%.}{ https://doi.org/%DOI:l%}{ %URL:l% }</format>
+          <format>{%Author:2|Title%.}{ (%Year%{%YearSuffix%}).}{ &lt;i&gt;%Title%&lt;/i&gt;} { [%ThesisType%, %Institution%].} {%Comments%.}{ https://doi.org/%DOI%}{ %URL% }</format>
         </column>
         <sortkey>{%Author:0|Editor:0|Title|ShortTitle%}{ %Year%}{ %Title|ShortTitle%}</sortkey>
       </source>
@@ -355,7 +355,7 @@
         <column id="1">
           <halign>left</halign>
           <valign>top</valign>
-          <format>{%Author:2%. [%Publisher%]. { (%Year%{%YearSuffix%}{, %Month%{ %Day%}}).}}{ &lt;i&gt;%Title% &lt;/i&gt;} {%Type%.}{ %InternetSiteTitle%.}{ %URL:l%}</format>
+          <format>{%Author:2%. [%Publisher%]. { (%Year%{%YearSuffix%}{, %Month%{ %Day%}}).}}{ &lt;i&gt;%Title% &lt;/i&gt;} {%Type%.}{ %InternetSiteTitle%.}{ %URL%}</format>
         </column>
         <sortkey>{%Author:0|Title|InternetSiteTitle%}{ %Year%}{ %Title|InternetSiteTitle%}</sortkey>
       </source>
