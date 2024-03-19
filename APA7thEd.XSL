@@ -383,7 +383,7 @@
         <corporate>{%Corporate%}</corporate>
         <first_person>{%Last|First%}</first_person>
         <other_persons>{%Last|First%}</other_persons>
-        <separator_between_if_two> &amp; </separator_between_if_two>
+        <separator_between_if_two>, &amp; </separator_between_if_two>
         <separator_between_if_more_than_two>, </separator_between_if_more_than_two>
         <separator_before_last>, &amp; </separator_before_last>
         <max_number_of_persons_to_display>2</max_number_of_persons_to_display>
@@ -398,7 +398,7 @@
         <corporate>{%Corporate%}</corporate>
         <first_person>{%Last%}, {%First:a%.}{ %Middle:a%.}</first_person>
         <other_persons>{%Last%}, {%First:a%.}{ %Middle:a%.}</other_persons>
-        <separator_between_if_two> &amp; </separator_between_if_two>
+        <separator_between_if_two>, &amp; </separator_between_if_two>
         <separator_between_if_more_than_two>, </separator_between_if_more_than_two>
         <separator_before_last>, &amp; </separator_before_last>
         <max_number_of_persons_to_display>20</max_number_of_persons_to_display>
@@ -413,7 +413,7 @@
         <corporate>{%Corporate%}</corporate>
         <first_person>{%First:a%.}{ %Middle:a%.}{ %Last% }</first_person>
         <other_persons>{%First:a%.}{ %Middle:a%.}{ %Last% }</other_persons>
-        <separator_between_if_two> &amp; </separator_between_if_two>
+        <separator_between_if_two>, &amp; </separator_between_if_two>
         <separator_between_if_more_than_two>, </separator_between_if_more_than_two>
         <separator_before_last>, &amp; </separator_before_last>
         <max_number_of_persons_to_display>20</max_number_of_persons_to_display>
@@ -431,7 +431,7 @@
         <corporate>{%Corporate%}</corporate>
         <first_person>{%Last% }{%First:a%}{%Middle:a%}</first_person>
         <other_persons>{%Last% }{%First:a%}{%Middle:a%}</other_persons>
-        <separator_between_if_two> &amp; </separator_between_if_two>
+        <separator_between_if_two>, &amp; </separator_between_if_two>
         <separator_between_if_more_than_two>, </separator_between_if_more_than_two>
         <separator_before_last>, &amp; </separator_before_last>
         <max_number_of_persons_to_display>20</max_number_of_persons_to_display>
@@ -447,7 +447,7 @@
         <multi_prefix></multi_prefix>
         <first_person>{%First:a%.}{ %Middle:a%.}{ %Last% }</first_person>
         <other_persons>{%First:a%.}{ %Middle:a%.}{ %Last% }</other_persons>
-        <separator_between_if_two> &amp; </separator_between_if_two>
+        <separator_between_if_two>, &amp; </separator_between_if_two>
         <separator_between_if_more_than_two>, </separator_between_if_more_than_two>
         <separator_before_last>, &amp; </separator_before_last>
         <max_number_of_persons_to_display>20</max_number_of_persons_to_display>
