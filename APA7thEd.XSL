@@ -32,7 +32,7 @@
   <xsl:variable name="data">
     <general>
       <stylename>APA 7th Edition (Beta)</stylename>
-      <version>2024.03.19</version>
+      <version>2024.08.22</version>
       <description>An implementation of the APA 7th Ed reference style based on the description by Scribbr.</description>
       <URL>https://www.scribbr.com/apa-style/apa-seventh-edition-changes/</URL>
       <author>Dr. Locky Law (lx3h@yahoo.com)</author>
@@ -411,9 +411,9 @@
         <single_prefix></single_prefix>
         <multi_prefix></multi_prefix>
         <corporate>{%Corporate%}</corporate>
-        <first_person>{%First:a%.}{ %Middle:a%.}{ %Last% }</first_person>
-        <other_persons>{%First:a%.}{ %Middle:a%.}{ %Last% }</other_persons>
-        <separator_between_if_two>, &amp; </separator_between_if_two>
+        <first_person>{%First:a%.}{ %Middle:a%.}{ %Last%}</first_person>
+        <other_persons>{%First:a%.}{ %Middle:a%.}{ %Last%}</other_persons>
+        <separator_between_if_two> &amp; </separator_between_if_two>
         <separator_between_if_more_than_two>, </separator_between_if_more_than_two>
         <separator_before_last>, &amp; </separator_before_last>
         <max_number_of_persons_to_display>20</max_number_of_persons_to_display>
